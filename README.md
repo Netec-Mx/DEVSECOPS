@@ -1,17 +1,4 @@
-<div>
-<table>
-  <tbody>
-      <tr>
-    <td> 
-        <img src="./images/neteclogo.png" width="250px">
-    <td>
-    <td>
-      <h1>DevSecOps<h1>
-    </td>
-  </tr>
-  </tbody>
-<table>
-</div>
+# ![Logo](./images/neteclogo_.png) 
 
 **Plataforma de Laboratorios**
 Bienvenido a la **Plataforma de Laboratorios** del curso **DevSecOps**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
