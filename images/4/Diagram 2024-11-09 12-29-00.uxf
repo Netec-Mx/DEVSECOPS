@@ -1,0 +1,24 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Azure Key Vault</help_text><element><id>UMLClass</id><coordinates><x>30</x><y>500</y><w>430</w><h>180</h></coordinates><panel_attributes>bg=white
+lt=-
+fontsize=25
+fg=blue
+**Microservice Client**
+
+RESTful
+GET, POST, PUT, DELETE
+
+port: 8082
+bg=#22660b</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>90</y><w>620</w><h>320</h></coordinates><panel_attributes>*Microsoft Azure*
+fontsize=19
+bg=#23aaf2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>190</y><w>180</w><h>150</h></coordinates><panel_attributes>*Microsoft Entra ID*
+fontsize=15
+bg=334954
+fg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>250</y><w>160</w><h>50</h></coordinates><panel_attributes>App Registration
+bg=#731ed0
+fg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>270</y><w>140</w><h>250</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-&gt;&gt;&gt;
+*is connected*</panel_attributes><additional_attributes>120;10;10;10;10;230</additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>180</y><w>180</w><h>150</h></coordinates><panel_attributes>*Azure Key Vault*
+fontsize=15
+bg=#e7f00e</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>250</y><w>220</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-&gt;&gt;&gt;
+*Azure RBAC*</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>320</y><w>340</w><h>240</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+*request secret*</panel_attributes><additional_attributes>320;10;320;220;10;220</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>320</y><w>410</w><h>340</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+*send secret*</panel_attributes><additional_attributes>10;320;390;320;390;10</additional_attributes></element></diagram>
