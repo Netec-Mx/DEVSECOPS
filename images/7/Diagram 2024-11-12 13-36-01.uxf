@@ -1,0 +1,14 @@
+<diagram program="umletino" version="15.1"><zoom_level>12</zoom_level><element><id>UMLClass</id><coordinates><x>408</x><y>384</y><w>384</w><h>180</h></coordinates><panel_attributes>
+
+*Terraform template*
+/IaC deployment Microservice Client/
+fontsize=16
+valign=center
+bg=#2368ad
+fg=blue
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>528</x><y>204</y><w>156</w><h>72</h></coordinates><panel_attributes>*Checkov*
+bg=#cd7545</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>588</x><y>264</y><w>132</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+*security scan*</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>672</x><y>228</y><w>204</w><h>36</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>150;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>852</x><y>180</y><w>204</w><h>96</h></coordinates><panel_attributes>Show report</panel_attributes><additional_attributes></additional_attributes></element></diagram>

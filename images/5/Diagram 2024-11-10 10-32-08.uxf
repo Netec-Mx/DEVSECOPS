@@ -1,0 +1,35 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>56</x><y>184</y><w>344</w><h>144</h></coordinates><panel_attributes>bg=white
+lt=-
+fontsize=25
+fg=blue
+**Microservice Client**
+
+RESTful
+GET, POST, PUT, DELETE
+
+port: 8082
+bg=#22660b</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>584</x><y>96</y><w>768</w><h>336</h></coordinates><panel_attributes>*Github Repository*
+fontsize=19
+bg=#273746</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>232</y><w>208</w><h>32</h></coordinates><panel_attributes>lt=&lt;-
+*push code*
+fontsize=15</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>184</y><w>736</w><h>200</h></coordinates><panel_attributes>*github Action*
+fontsize=19
+bg=#780ef0
+fg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>608</x><y>264</y><w>128</w><h>64</h></coordinates><panel_attributes>*build with maven*
+fontsize=15
+valign=center
+bg=#f07012
+fg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>768</x><y>264</y><w>160</w><h>64</h></coordinates><panel_attributes>*OWASP dependency check*
+fontsize=15
+valign=center
+bg=#f07012
+fg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>264</y><w>152</w><h>64</h></coordinates><panel_attributes>*SonarCloud Analytics*
+fontsize=15
+valign=center
+bg=#f07012
+fg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1144</x><y>264</y><w>152</w><h>64</h></coordinates><panel_attributes>*Build and push*
+*Docker image*
+fontsize=15
+valign=center
+bg=#f07012
+fg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>728</x><y>288</y><w>56</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>288</y><w>56</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1104</x><y>288</y><w>56</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>50;10;10;10</additional_attributes></element></diagram>

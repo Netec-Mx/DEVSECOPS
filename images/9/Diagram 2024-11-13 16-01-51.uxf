@@ -1,0 +1,10 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>390</x><y>280</y><w>440</w><h>180</h></coordinates><panel_attributes>*Microsoft Azure (Portal)*
+
+/*Defender for Cloud*/
+/Visualize Security Options in Azure/
+
+fontsize=19
+
+fg=#9e2189
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>140</x><y>310</y><w>60</w><h>120</h></coordinates><panel_attributes>student
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>350</y><w>230</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>210;10;10;10</additional_attributes></element></diagram>

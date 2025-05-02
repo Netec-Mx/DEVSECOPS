@@ -1,0 +1,24 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><element><id>UMLClass</id><coordinates><x>279</x><y>449</y><w>473</w><h>198</h></coordinates><panel_attributes>bg=white
+lt=-
+fontsize=25
+fg=blue
+**Microservice Client**
+
+RESTful
+GET, POST, PUT, DELETE
+
+port: 8082
+bg=#22660b</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>279</x><y>240</y><w>132</w><h>88</h></coordinates><panel_attributes>*SNYK*
+halign=center
+valign=center
+fontsize=24
+bg=#113a78
+fg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>532</x><y>240</y><w>242</w><h>88</h></coordinates><panel_attributes>*OWASP*
+dependency check
+halign=center
+valign=center
+fontsize=24
+bg=#1b64d1
+fg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>334</x><y>317</y><w>187</w><h>154</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+*/analyze dependencies/*</panel_attributes><additional_attributes>10;10;10;40;130;40;130;120</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>317</y><w>176</w><h>154</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+*/analyze dependencies/*</panel_attributes><additional_attributes>140;10;140;40;40;40;40;120</additional_attributes></element></diagram>

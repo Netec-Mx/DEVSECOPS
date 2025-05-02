@@ -1,0 +1,39 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>539</x><y>319</y><w>671</w><h>363</h></coordinates><panel_attributes>fg=#251461
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>693</x><y>286</y><w>286</w><h>77</h></coordinates><panel_attributes>*Kubernetes Cluster*
+style=wordwrap
+fontsize=19
+
+fg=#251461</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>462</x><y>99</y><w>198</w><h>110</h></coordinates><panel_attributes>
+*YAML Files*
+db-secrets.yaml
+microclient.yaml
+microservice-secrets.yaml
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>198</y><w>99</w><h>143</h></coordinates><panel_attributes>lt=&lt;-
+lw=2
+fg=blue
+
+deploy app</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>583</x><y>363</y><w>605</w><h>275</h></coordinates><panel_attributes>*Worker Node*
+fg=#2cc956</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>682</x><y>440</y><w>132</w><h>187</h></coordinates><panel_attributes>*POD*
+not exposed
+fg=#2cc9c4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>946</x><y>440</y><w>132</w><h>187</h></coordinates><panel_attributes>*POD*
+exposed 8082
+fg=#2cc9c4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>693</x><y>528</y><w>110</w><h>33</h></coordinates><panel_attributes>MySQLContainer</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>957</x><y>528</y><w>110</w><h>44</h></coordinates><panel_attributes>Microservice
+Container</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>792</x><y>528</y><w>187</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-&gt;&gt;&gt;
+get data
+</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>33</x><y>363</y><w>319</w><h>198</h></coordinates><panel_attributes>*Docker Hub*
+bg=#45cdc9
+fontsize=17</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>88</x><y>418</y><w>209</w><h>88</h></coordinates><panel_attributes>repository/devsecops
+microserviceclient image
+bg=#085f5d
+fg=white
+fontsize=15</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>132</x><y>121</y><w>99</w><h>55</h></coordinates><panel_attributes>*Trivy*
+fontsize=27
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>99</x><y>143</y><w>165</w><h>297</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+Analyze image docker</panel_attributes><additional_attributes>10;250;10;10;30;10</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>121</y><w>264</w><h>44</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+Analyze yaml files</panel_attributes><additional_attributes>220;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>253</x><y>209</y><w>132</w><h>55</h></coordinates><panel_attributes>*Checkov*
+fontsize=27
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>374</x><y>176</y><w>187</w><h>77</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+Analyze yaml files</panel_attributes><additional_attributes>80;10;50;10;50;50;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>935</x><y>110</y><w>176</w><h>55</h></coordinates><panel_attributes>*kubescape*
+fontsize=27
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1023</x><y>154</y><w>165</w><h>187</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+Analyze cluster config</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element></diagram>
