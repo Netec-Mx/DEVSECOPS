@@ -1,15 +1,14 @@
-# 2. Análisis de seguridad y códificación de un API Rest Spring Boot
-En este laboratorio se espera que el alumno pueda códificar un API REST con Spring Boot usando las buenas prácticas de seguridad y pueda realizar análisis de código para buscar vulnerabilidades de código usando snyk y sonarqube.
+# Práctica 2. Análisis de seguridad y códificación de un API Rest Spring Boot
 
+En este laboratorio se espera que desarrolles una API REST utilizando Spring Boot, aplicando buenas prácticas de seguridad en el proceso. Además, deberás realizar análisis de código con herramientas como Snyk y SonarQube, con el objetivo de identificar posibles vulnerabilidades.
 
-## Objetivos
-- Desarrollar un api restful usando las buenas prácticas en el diseño de código con spring boot. 
+## Objetivos:
 
-
-- Analizar nuestro código usando snyk para buscar vulnerabilidades
-
-- Analizar nuestro código usando sonarQube para la busqueda de vulnerabilidades en nuestro código. 
-
+Al finalizar la práctica, serás capaz de:
+- Desarrollar un API RESTful aplicando las buenas prácticas en el diseño de código con Spring Boot. 
+- Analizar nuestro código usando:
+	- snyk para buscar vulnerabilidades, y
+ 	- SonarQube para la busqueda de vulnerabilidades en nuestro código.
 
 ---
 <!--Este fragmento es la barra de 
@@ -35,12 +34,9 @@ navegación-->
 
 ---
 
-## Diagrama
+## Objetivo visual:
 
 ![diagrama](../images/2/diagrama.png)
-
-<br>
-
 
 ## Instrucciones
 > **IMPORTANTE:** Antes de iniciar el laboratorio es necesario tener una cuenta de **gmail** y una cuenta **github** para el registro de las herramientas. 
