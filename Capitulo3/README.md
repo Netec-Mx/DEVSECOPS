@@ -10,6 +10,9 @@ Al finalizar la práctica, serás capaz de:
 	- snyk para buscar vulnerabilidades, y
  	- SonarQube para la busqueda de vulnerabilidades en nuestro código.
 
+## Duración aproximada:
+- 60 minutos.
+
 ---
 <!--Este fragmento es la barra de 
 navegación-->
