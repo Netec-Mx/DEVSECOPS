@@ -1,11 +1,15 @@
-# 7. Configuración y uso de checkov para el escaneo de una plantilla de Terraform. 
+# Práctica 7. Configuración y uso de checkov para el escaneo de una plantilla de Terraform 
 
-En este laboratorio exploraremos la integración continúa usando Github Actions y el almacenamiento de nuestra imagen Docker en Docker hub
+En este laboratorio exploraremos la integración continúa usando Github Actions y el almacenamiento de nuestra imagen Docker en Docker Hub.
 
-## Objetivos
-- Installar checkov
-- Configurar una plantilla de terraform para nuestro microservicio cliente
-- Buscar vulnerabilidades usando checkov 
+## Objetivos de la práctica:
+- Installar checkov.
+- Configurar una plantilla de terraform para nuestro microservicio cliente.
+- Buscar vulnerabilidades usando checkov.
+
+## Duración aproximada:
+- 40 minutos.
+
 ---
 
 <div style="width: 400px;">
@@ -46,11 +50,9 @@ Este laboratorio esta configurado en las siguientes secciones:
 
 
 ## Instalación checkov [return](#instrucciones)
-> **IMPORTANTE:** Para realizar esta sección es necesario tener instalado a python. En el caso de no tenerlo descargarlo de **[aquí](https://www.python.org/downloads/)**
+> **IMPORTANTE:** Para realizar esta sección es necesario tener instalado Python. En el caso de no tenerlo descargarlo de **[aquí](https://www.python.org/downloads/)**
 
-
-1. Abrir una terminal 
-
+1. Abrir una terminal. 
 2. Ejecutar el siguiente comando: 
 
 ```bash
@@ -59,7 +61,7 @@ pip install checkov
 
 ![alt text](../images/7/1.png)
 
-3. Validar la instalación de checkov usando el siguiente comando 
+3. Validar la instalación de checkov usando el siguiente comando. 
 
 ```bash
 pip list
@@ -68,13 +70,11 @@ pip list
 ![alt text](../images/7/2.png)
 
 
-
-
 ## Crear plantilla terraform [return](#instrucciones)
 
-1. Abrir **Visual Studio Code**
-2. Crear una carpeta que llamaremos **terraform**
-3. En la carpeta crearemos un archivo que llamaremos **main.tf**
+1. Abrir **Visual Studio Code.**
+2. Crear una carpeta que llamaremos **terraform.**
+3. En la carpeta crearemos un archivo que llamaremos **main.tf**.
 4. En el archivo **main.tf** añadiremos el siguiente contenido: 
 
 ```json
@@ -160,10 +160,8 @@ Se indica que el contenedor tendrá una dirección IP pública accesible desde i
 
 
 
-
-
 ## Análisis de vulnerabilidades de terraform [return](#instrucciones)
-1. Para escanear las vulnerabilidades del archivo de terraform necesitamos abrir una terminal en la ruta donde se encuentra el archivo. 
+1. Para escanear las vulnerabilidades del archivo de terraform es necesario abrir una terminal en la ruta donde se encuentra el archivo. 
 
 2. Ejecutar el siguiente comando:
 
@@ -173,9 +171,8 @@ checkov -d .
 ![alt](../images/7/3.png)
 
 
-3. Análiza todas las recomendaciones de seguridad que te da checkov. 
-
-4. Para proteger las variables de ambiente y solucionar la mayor parte de errores crea un archivo que llamaremos **variables.tf** añadiremos el siguiente contenido:
+3. Analizar todas las recomendaciones de seguridad que te da checkov.
+4. Para proteger las variables de ambiente y solucionar la mayor parte de errores, crear un archivo con el nombre de **variables.tf** al cual se le añadira el siguiente contenido:
 
 ```json
 variable "client_id"{
@@ -209,7 +206,7 @@ variable "tenant_id" {
 }
 ```
 
-5. Ahora añadiremos otro archivo que llamaremos **terraform.tfvars** donde añadiremos el siguiente contenido:
+5. Añadir otro archivo que llamaremos **terraform.tfvars** donde se agregará el siguiente contenido:
 
 ```json
 client_id         = "<client_id>"
@@ -219,20 +216,19 @@ dockerhub_username = "pruebauser"
 dockerhub_password = "pruebapassword"
 ```
 
-
-6. Escanear de nuevo nuestra plantilla de terraform con el siguiente comando :
+6. Escanear nuevamente la plantilla de terraform con el siguiente comando:
 
 ```bash
 checkov -d . 
 ```
 
-7. Si se realiza el escaneo de nuevo el error que nos mostraba de **harcoding** nuestros datos en la plantilla de terraform va a desaparecer. 
+7. Al realizar el escaneo, el error de **harcording** que se mostraba en los datos de la plantilla de terraform, va a desaparecer.
 
 > **Nota:** Nos van aparecer otras sugerancias para proteger mucho más nuestra infraestructura cómo código. 
 
 
 ## Resultado esperado [Instrucciones](#instrucciones)
 
-Al final el alumno podrá observar  una pantalla con unas sugerencias cómo la siguiente. 
+Al final, el alumno podrá observar una pantalla con unas sugerencias cómo la siguiente. 
 
 ![alt text](../images/7/4.png)
