@@ -3,11 +3,13 @@
 Es necesario proteger los datos de la base de datos y no almacenarlos en el microservicios cómo método de seguridad, para realizar esto usaremos **Azure Key Vault** para la protección de la información. 
 
 
-## Objetivos
+## Objetivos de la práctica:
 - Configurar un registro de aplicación en el directorio activo de Azure. 
 - Crear y configurar un **Azure Key Vault.**
 - Conectar nuestro **Microservicio Cliente** a Azure Key Vault para obtener la información de la base de datos. 
 
+## Duración aproximada:
+- 60 minutos.
 
 ---
 
