@@ -1,4 +1,4 @@
-# Práctica 4. Gestión de secretos con Azure Keyvault del Microservicio Cliente
+# Práctica 4. Gestión de secretos con Azure Key Vault del microservicio cliente
 
 Es necesario proteger los datos de la base de datos y no almacenarlos en el microservicios cómo método de seguridad, para realizar esto usaremos **Azure Key Vault** para la protección de la información. 
 
@@ -6,7 +6,7 @@ Es necesario proteger los datos de la base de datos y no almacenarlos en el micr
 ## Objetivos de la práctica:
 - Configurar un registro de aplicación en el directorio activo de Azure. 
 - Crear y configurar un **Azure Key Vault.**
-- Conectar nuestro **Microservicio Cliente** a Azure Key Vault para obtener la información de la base de datos. 
+- Conectar nuestro **microservicio cliente** a Azure Key Vault para obtener la información de la base de datos. 
 
 ## Duración aproximada:
 - 60 minutos.
@@ -65,7 +65,7 @@ Este lab esta separado en las siguientes secciones:
 6. Añadir los siguientes datos al registro de la aplicación. 
 
 - **Name:** claseapp**tusiniciales**
-- **Supported account types:**  Accounts in this organizational directory only
+- **Supported account types:** Accounts in this organizational directory only
 - **Redirect URI**: Web
 
 ![alt text](../images/4/4.png)
@@ -85,7 +85,7 @@ Este lab esta separado en las siguientes secciones:
 
 ![alt text](../images/4/7.png)
 
-10. Al generar el secreto nos generará un valor. **Si no copiamos este valor va a desaparecer y no lo podremos recuperar.**
+10. Al generar el secreto nos produce un valor. **Si no copiamos este valor va a desaparecer y no lo podremos recuperar.**
 
 ![alt text](../images/4/8.png)
 
@@ -94,7 +94,8 @@ Este lab esta separado en las siguientes secciones:
 ![alt text](../images/4/9.png)
 
 ## Configuración Azure Key Vault[return](#instrucciones)
-1. Abrir el portal de azure **https://portal.azure.com**.
+
+1. Abrir el portal de Azure **https://portal.azure.com**.
 
 2. En la barra de búsqueda escribir **Resource Groups**.
 
@@ -110,9 +111,9 @@ Este lab esta separado en las siguientes secciones:
 
 ![alt text](../images/4/12.png)
 
-6. Para la configuración del key vault, usaremos la siguiente: 
+6. Para la configuración del Key Vault, usaremos lo siguiente: 
 
-- **Subscription:** *suscripción que puedas usar para crear recursos.*
+- **Subscription:** *Suscripción que puedas usar para crear recursos.*
 
 - **Resource Group:** *Grupo de recursos disponible (si no hay crear uno nuevo).*
 
@@ -127,7 +128,7 @@ Este lab esta separado en las siguientes secciones:
 ![alt text](../images/4/13.png)
 
 7. Abrir el **Azure Key Vault** creado y abrir la opción **Access control IAM** (añadir 2 roles).
-- **Rol 1: KeyVault Adminstrator**: Este rol se le agrega a nuestra cuenta de Azure, esto permite que podamos administrar la herramienta y agregar información.
+- **Rol 1: Key Vault Adminstrator**: Este rol se le agrega a nuestra cuenta de Azure, esto permite que podamos administrar la herramienta y agregar información.
 
 - **Rol 2: Key Vault Secrets User**: Este rol se le agrega a nuestra aplicación registrada en Azure y permite que nuestra app pueda obtener los secretos de **Azure Key Vault**. 
 
@@ -290,7 +291,7 @@ spring.datasource.password=${db-password}
 
 ![alt text](../images/4/20.png)
 
-6. Iniciar la aplicación y validar que continue funcionando. No se alteró el funcionamiento de la aplicación, lo que modificamos es que ahora el usuario y contraseña de la base de datos se obtiene desde **Key vualt**.
+6. Iniciar la aplicación y validar que continue funcionando. No se alteró el funcionamiento de la aplicación, lo que modificamos es que ahora el usuario y contraseña de la base de datos se obtiene desde **Key Vault**.
 
 ## Resultado esperado 
 Si hemos llegado hasta aqui el alumno debería de poder ejecutar las operaciones del microservicio sin ningún problema. 
