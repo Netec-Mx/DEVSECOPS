@@ -1,11 +1,14 @@
-# 5. Añadir seguridad en CICD para el Microservicio Cliente
-Para automatizar la construcción, pruebas y liberación del proyecto es necesario Crear un CI/CD usando github actions. Aunque nos centraremos más en las pruebas de seguridad de nuestro proyecto. 
+# Práctica 5. Añadir seguridad en CI/CD para el microservicio cliente
+Para automatizar la construcción, pruebas y liberación del proyecto, es necesario crear un CI/CD usando github actions. Aunque nos centraremos más en las pruebas de seguridad de nuestro proyecto. 
 
 
-## Objetivos
-- Configurar un repositorio en github
-- Sincronizar nuestro microservicio cliente con el repositorio remoto
+## Objetivos de la práctica:
+- Configurar un repositorio en GitHub.
+- Sincronizar nuestro microservicio cliente con el repositorio remoto.
 - Crear un CI/CD con pruebas de seguridad para validar automaticamente el código del microservicio. 
+
+## Duración aproximada:
+- 60 minutos.
 
 ---
 <div style="width: 400px;">
@@ -32,8 +35,7 @@ Para automatizar la construcción, pruebas y liberación del proyecto es necesar
 
 ![diagrama](../images/5/diagrama.png)
 
-> **IMPORTANTE:** Antes de comenzar este laboratorio necesitas tener una cuenta de **Github gratuita**, y una cuenta de **Docker hub**, en el caso de no tenerlas es necesario los siguientes enlaces **[Github Free account](https://github.com/)** y **[Docker hub Free account](https://hub.docker.com/)**
-
+> **IMPORTANTE:** Antes de comenzar este laboratorio necesitas tener una cuenta de **Github gratuita**, y una cuenta de **Docker hub**, en el caso de no tenerlas es necesario obtenerlas en los siguientes enlaces **[Github Free account](https://github.com/)** y **[Docker hub Free account](https://hub.docker.com/)**
 
 
 ## Instrucciones
@@ -47,30 +49,29 @@ Este laboratorio esta separado en las siguientes secciones:
 
 - **[Validar Github Action](#validar-github-action-return)**
 
-## Configuración repositorio en github [return](#instrucciones)
-1. Crear un nuevo repositorio en github con los siguientes datos: 
+## Configuración del repositorio en GitHub [return](#instrucciones).
+
+1. Crear un nuevo repositorio en GitHub con los siguientes datos:
+   
 - **repository name:** repomicroservice
-
 - **Public:** checked
-
 - **Las demás opciones por default**
 
 ![alt text](../images/5/1.png)
 
-2.  Al crear el repositorio nos mostrará algunos comandos importantes, vamos a copiar el comando que comience con **git remote add origin url_repositorio** y activamos **HTTPS**
+2.  Al crear el repositorio nos mostrará algunos comandos importantes. Copiar el comando que comience con **git remote add origin url_repositorio** y activar **HTTPS**.
 
 ![alt text](../images/5/2.png)
 
-3. Fin configuración repositorio remoto. 
-
+3. Fin de la configuración del repositorio remoto. 
 
 ## Configuración Microservicio cliente [return](#instrucciones)
 
-> **IMPORTANTE:** Para esta sección es fundamental tener instalado **git** en el caso de no tenerlo, descargarlo de la siguiente ruta **[git download](https://git-scm.com/downloads)**
+> **IMPORTANTE:** Para esta sección es fundamental tener instalado **git**, en el caso de no tenerlo, descargarlo de la siguiente ruta **[git download](https://git-scm.com/downloads)**
 
-1. Abrir nuestro Microservicio Cliente en **Visual Studio Code**
+1. Abrir nuestro Microservicio Cliente en **Visual Studio Code.**
 
-2. Módificar el archivo **pom.xml** con el siguiente:
+2. Módificar el archivo **pom.xml** con el siguiente comando:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -192,7 +193,7 @@ Este laboratorio esta separado en las siguientes secciones:
 
 ```
 
-3. En la raíz de nuestro proyecto crear un archivo llamado **suppression.xml** y agregamos el siguiente contenido:
+3. En la raíz de nuestro proyecto crear un archivo llamado **suppression.xml** y agregar el siguiente contenido:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -207,7 +208,7 @@ Este laboratorio esta separado en las siguientes secciones:
 </suppressions>
 ```
 
-3.1 Modificar el archivo **application.properties**
+3.1 Modificar el archivo **application.properties**.
 
 ```properties
 spring.application.name=micro-client
@@ -239,58 +240,54 @@ EXPOSE 8082
 ENTRYPOINT [ "java","-jar","client.jar" ]
 ```
 
-
-4. En la barra lateral de **VSCode** buscaremos el icon de git. 
+4. Buscar en la barra lateral de **VSCode** el icono de git. 
 
 ![git](../images/5/3.png)
 
-5. Ahora pulsaremos el botón **Initialize repository**
+5. Pulsar el botón **Initialize repository.**
 
 ![init](../images/5/4.png)
 
-6. Agregamos todos los cambios al repositorio usando el simbólo de **+** en la opción de **changes**
+6. Agregar todos los cambios al repositorio usando el símbolo de **+** en la opción de **changes**.
 
 ![alt text](../images/5/5.png)
 
-7. Añadimos un mensaje al **commit** y pulsamos el botón **commit**
-
+7. Añadir un mensaje al **commit** y pulsar el botón **commit**.
 
 ![alt text](../images/5/6.png)
 
-8. Ahora abriremos una terminal en nuestro microservicio cliente en **vscode** 
+8. Abrir una terminal en nuestro microservicio cliente en **VSCode**. 
 
-9. Ejecutamos el comando copiado de nuestro repositorio de **github**
+9. Ejecutar el comando copiado de nuestro repositorio de **GitHub**
 
 ```bash
 git remote add origin <URI git repository>
 ```
 
-10.  Y ahora ejecutaremos el comando que nos permitira sincronizar nuestro microservicio cliente: 
+10. Ejecutar el comando que nos permitira sincronizar nuestro microservicio cliente: 
 
 ```bash
 git push --set-upstream origin main
 ```
 
-> **IMPORTANTE:** Este comando nos pedirá iniciar sesión con nuestra cuenta de github, debemos de iniciar y esperar a que nuestro proyecto se cargue en github. 
+> **IMPORTANTE:** Este comando nos pedirá iniciar sesión con nuestra cuenta de GitHub, debemos de iniciar y esperar a que nuestro proyecto se cargue. 
 
-
-11. Validar que el código de tu microservicio este cargado en **Github** 
+11. Validar que el código de tu microservicio este cargado en **GitHub.** 
 
 ![alt text](../images/5/8.png)
 
 
-## Crear github Action [return](#instrucciones)
+## Crear GitHub Action [return](#instrucciones)
 
-1. En el repositorio de **Github** donde se encuentra tu **Microservicio cliente** buscaremos la sección **Actions**
+1. En el repositorio de **GitHub** donde se encuentra tu **Microservicio cliente** buscar la sección **Actions.**
 
 ![alt text](../images/5/9.png)
 
-2. Seleccionaremos la opción **set up a workflow yourself**
+2. Seleccionar la opción **set up a workflow yourself**.
 
 ![alt text](../images/5/10.png)
 
-3. Añadir el siguiente flujo YAML, para realizar el CICD
-
+3. Añadir el siguiente flujo YAML, para realizar el CI/CD.
 
 ```yaml
 name: DevSecOps Microservice Client
@@ -366,30 +363,26 @@ jobs:
 
 
 
-4. Realizar el **commit** 
-5. Añadir los siguientes **Secretos** en el repositorio
+4. Realizar el **commit**. 
+5. Añadir los siguientes **Secretos** en el repositorio:
 
 ![alt text](../images/5/11.png)
-
-
 
 ## Validar Github Action [return](#instrucciones)
 
 1. Ir a la sección de **Actions** en nuestro repositorio.
 
-2. Encontraremos nuestro **action** ejecutado correctamente
+2. Encontrar nuestro **action** ejecutado correctamente.
 
 ![alt text](../images/5/12.png)
 
-3. Abrir nuestra cuenta de **docker hub** y validar que se haya creado el repositorio con nuestra imagen lista para ser usada en un despliegue. 
+3. Abrir nuestra cuenta de **Docker hub** y validar que se haya creado el repositorio con nuestra imagen lista para ser usada en un despliegue. 
 
 ![alt text](../images/5/13.png)
 
+## Resultado esperado [Instrucciones](#instrucciones)
 
-
-## Resultado Esperado [Instrucciones](#instrucciones)
-
-Se espera que el alumno al final de la ejecución del flujo pueda observar su imagen en su repositorio de **github**
+Se espera que el alumno al final de la ejecución del flujo pueda observar su imagen en su repositorio de **GitHub**.
 
 ![alt text](../images/5/14.png)
 
