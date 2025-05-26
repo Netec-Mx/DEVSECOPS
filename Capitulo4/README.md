@@ -1,10 +1,10 @@
-# Práctica 3. Analizar dependencias y librerias del Microservicio Cliente usando snyk y OWASP Dependency Check  
+# Práctica 3. Analizar dependencias y librerias del Microservicio Cliente usando Snyk y OWASP Dependency Check  
 
-En este labatorio se espera que los alumnos puedan revisar la salud de las dependencias de su Microservicio usando **SNYK y OWASP dependency check.**
+En este labatorio se espera que los alumnos puedan revisar la salud de las dependencias de su Microservicio usando **Snyk y OWASP dependency check.**
 
 ## Objetivos de la práctica:
-- Usar **SNYK** para escanear el proyecto y buscar vulnerabilidades en sus dependencias. 
-- Usar **OWASP dependency check** para buscar vulnerabilidades en las dependencias del **pom.xml** 
+- Usar **Snyk** para escanear el proyecto y buscar vulnerabilidades en sus dependencias. 
+- Usar **OWASP dependency check** para buscar vulnerabilidades en las dependencias del **pom.xml**. 
 
 ## Duración aproximada:
 - 40 minutos.
@@ -40,13 +40,13 @@ En este labatorio se espera que los alumnos puedan revisar la salud de las depen
 ## Instrucciones
 Esta práctica se separa en las siguientes secciones:
 
-- **[Análisis de dependencias usando SNYK](#análisis-de-dependencias-usando-snyk-return)**
+- **[Análisis de dependencias usando Snyk](#análisis-de-dependencias-usando-snyk-return)**
 
 - **[Análisis de dependencias usando OWASP dependency Check](#análisis-de-dependencias-usando-owasp-dependency-check-return)**
 
 
-## Análisis de dependencias usando SNYK [return](#instrucciones)
-> **IMPORTANTE:** Se necesita tu cuenta de snyk del laboratorio **Análisis de seguridad y códificación de un API Rest Spring Boot** en el caso que no se tenga, es necesario regresar al laboratorio anterior y seguir las instrucciones de cómo obtenerla. 
+## Análisis de dependencias usando Snyk [return](#instrucciones)
+> **IMPORTANTE:** Se necesita tu cuenta de Snyk del laboratorio **Análisis de seguridad y códificación de un API Rest Spring Boot** en caso de que no se tenga, es necesario regresar al laboratorio anterior y seguir las instrucciones de cómo obtenerla. 
 
 1. Abrir **Visual Studio Code.**
 2. Abrir el proyecto del **MicroservicioCliente.** 
@@ -54,7 +54,7 @@ Esta práctica se separa en las siguientes secciones:
 
 ![alt text](../images/3/1.png)
 
-4. En la barra lateral de VSCode pulsa el icóno de **snyk.**
+4. En la barra lateral de VSCode pulsa el icóno de **Snyk.**
 
 ![alt text](../images/3/2.png)
 
@@ -81,7 +81,6 @@ Esta práctica se separa en las siguientes secciones:
 - Tener la base de datos en una conexión privada. 
 
 10. Por el momento, nuestra aplicación no requiere de una modificación a nivel de dependencia, pero si es importante tomar precauciones. 
-
 
 ## Análisis de dependencias usando OWASP dependency Check [return](#instrucciones)
 
@@ -195,7 +194,7 @@ OWASP dependency check es una herramienta **opensource** que usa una base de dat
 
 ![alt text](../images/3/6.png)
 
-5. Abrir la ruta **target**  y buscar el archivo **html**, **dependency-check-report.html**.
+5. Abrir la ruta **target** y buscar el archivo **html**, **dependency-check-report.html**.
 
 
 ![alt text](../images/3/7.png)
