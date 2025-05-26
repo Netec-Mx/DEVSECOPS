@@ -42,7 +42,7 @@ En este laboratorio exploraremos la integración continúa usando Github Actions
 ## Instrucciones
 Este laboratorio esta configurado en las siguientes secciones: 
 
-- **[Instalación checkov](#instalación-checkov-return)**
+- **[Instalación Checkov](#instalación-checkov-return)**
 
 - **[Crear plantilla terraform](#crear-plantilla-terraform-return)**
 
