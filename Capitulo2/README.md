@@ -2,12 +2,15 @@
 
 En este laboratorio debes de implementar un **modelo de amenazas** de una aplicación orientada a Microservicios. Además, observa las posibles amenazas y cómo puedes mitigarlas. 
 
-## Objetivos:
+## Objetivos de la práctica:
 
 Al finalizar la práctica, serás capaz de:
 - Comprender la solicitud de la aplicación.
 - Usar **Microsoft Modeling Tool** para detectar posible amenazas de la arquitectura. 
 - Generar un informe de las posibles amenazas encontradas. 
+
+## Duración aproximada:
+- 45 minutos.
 
 ---
 <!--Este fragmento es la barra de 
@@ -43,23 +46,23 @@ Se espera que, al término de la práctica, analices la siguiente estructura de 
 
 Antes de comenzar, lee con atención la siguiente información de la aplicación propuesta en el diagrama anterior. 
 
-> **IMPORTANTE:** Este diagrama ilustra la interacción entre varios componentes dentro de una arquitectura de microservicios, con énfasis en el flujo de autenticación. Los elementos clave incluyen un servidor de descubrimiento, un cliente de microservicio, una base de datos MySQL, Spring Cloud Gateway y un proveedor de identidad. El flujo comienza cuando un cliente solicita un token al proveedor de identidad, quien responde con dicho token, lo que permite al cliente interactuar con los microservicios a través del gateway.
+> **IMPORTANTE:** Este diagrama ilustra la interacción entre varios componentes dentro de una arquitectura de microservicios con énfasis en el flujo de autenticación. Los elementos clave incluyen un servidor de descubrimiento, un cliente de microservicio, una base de datos MySQL, Spring Cloud Gateway y un proveedor de identidad. El flujo comienza cuando un cliente solicita un token al proveedor de identidad, quien responde con dicho token, lo que permite al cliente interactuar con los microservicios a través del gateway.
 
 Una vez comprendida la funcionalidad de la aplicación solicitada, el siguiente paso es iniciar el modelado para detectar posibles amenazas en el diagrama anterior. 
 
-1. Abre **Microsoft Threat Modeling Tool**.
+1. Abrir **Microsoft Threat Modeling Tool**.
 
 ![alt text](../images/1/1.png)
 
-2. Selecciona **Create A Model**.
+2. Seleccionar **Create A Model**.
 
 ![alt text](../images/1/2.png)
 
-3. Posteriormente, abrirá un workspace con todas las herramientas necesarias para crear un modelo. 
+3. Posteriormente, se abrirá un workspace con todas las herramientas necesarias para crear un modelo. 
 
 ![alt text](../images/1/3.png)
 
-4. Define el  diagrama con los siguientes elementos:
+4. Definir el diagrama con los siguientes elementos:
 
 ![alt text](../images/1/4.png)
 
@@ -73,19 +76,19 @@ Una vez comprendida la funcionalidad de la aplicación solicitada, el siguiente 
 - **Request**
 - **Response**
 
-6. Guarda el modelo con el nombre **`microservices-model`**.
+6. Guardar el modelo con el nombre **`microservices-model`**.
 
-7. Genera el reporte: **Reports -> Create Full Report**.
+7. Generar el reporte: **Reports -> Create Full Report**.
 
 ![alt text](../images/1/5.png)
 
-8. Almacena el reporte en el escritorio con el nombre **`reporte`**.
+8. Almacenar el reporte en el escritorio con el nombre **`reporte`**.
 
-9. Analiza el reporte generado.
+9. Analizar el reporte generado.
 
 ![alt text](../images/1/6.png)
 
-10. Lista en qué casos del ciclo de vida del software se implementa cada vulnerabilidad. 
+10. Listar en qué casos del ciclo de vida del software se implementa cada vulnerabilidad. 
 
 - **Requirements (Requisitos)**
 
@@ -94,7 +97,7 @@ Una vez comprendida la funcionalidad de la aplicación solicitada, el siguiente 
 
 - **Design (Diseño)**
 
-    - Aquí se realiza el modelado de amenazas.
+    - Se realiza el modelado de amenazas.
     - Se identifican amenazas, mitigaciones y se documentan.
 
 - **Implementation (Implementación)**
@@ -104,7 +107,7 @@ Una vez comprendida la funcionalidad de la aplicación solicitada, el siguiente 
 
 - **Verification (Verificación / Pruebas)**
 
-    - Pruebas de seguridad: análisis estático, dinámico, pruebas de penetración, etc.
+    - Pruebas de seguridad: Análisis estático, dinámico, pruebas de penetración, etc.
 
 - **Release (Liberación)**
 
