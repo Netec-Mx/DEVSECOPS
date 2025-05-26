@@ -2,9 +2,9 @@
 En este laboratorio se espera que el alumno pueda implementar una arquitectura de microservicios en docker con monitoreo incluido. 
 
 ## Objetivos de la práctica:
-- Usar docker compose para crear arquitectura
-- Validar configuración de Prometheus
-- Crear Dashboard en Grafana 
+- Usar docker compose para crear arquitectura.
+- Validar configuración de Prometheus.
+- Crear Dashboard en Grafana.
 
 ## Duración aproximada:
 - 60 minutos.
