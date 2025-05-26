@@ -1,11 +1,11 @@
-# Práctica 7. Configuración y uso de checkov para el escaneo de una plantilla de Terraform 
+# Práctica 7. Configuración y uso de Checkov para el escaneo de una plantilla de Terraform 
 
 En este laboratorio exploraremos la integración continúa usando Github Actions y el almacenamiento de nuestra imagen Docker en Docker Hub.
 
 ## Objetivos de la práctica:
-- Installar checkov.
+- Installar Checkov.
 - Configurar una plantilla de terraform para nuestro microservicio cliente.
-- Buscar vulnerabilidades usando checkov.
+- Buscar vulnerabilidades usando Checkov.
 
 ## Duración aproximada:
 - 40 minutos.
@@ -61,7 +61,7 @@ pip install checkov
 
 ![alt text](../images/7/1.png)
 
-3. Validar la instalación de checkov usando el siguiente comando. 
+3. Validar la instalación de Checkov usando el siguiente comando. 
 
 ```bash
 pip list
@@ -171,7 +171,7 @@ checkov -d .
 ![alt](../images/7/3.png)
 
 
-3. Analizar todas las recomendaciones de seguridad que te da checkov.
+3. Analizar todas las recomendaciones de seguridad que te da Checkov.
 4. Para proteger las variables de ambiente y solucionar la mayor parte de errores, crear un archivo con el nombre de **variables.tf** al cual se le añadira el siguiente contenido:
 
 ```json
@@ -224,7 +224,7 @@ checkov -d .
 
 7. Al realizar el escaneo, el error de **harcording** que se mostraba en los datos de la plantilla de terraform, va a desaparecer.
 
-> **Nota:** Nos van aparecer otras sugerancias para proteger mucho más nuestra infraestructura cómo código. 
+> **Nota:** Nos van a aparecer otras sugerancias para proteger mucho más nuestra infraestructura cómo código. 
 
 
 ## Resultado esperado [Instrucciones](#instrucciones)
