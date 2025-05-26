@@ -1,15 +1,15 @@
-# 8. Análisis de seguridad de Docker y Kubernetes usando Trivy, Checkov y kubescape
-En este laboratorio se espera que el alumno pueda instalar y usar herramientas de análisis de vulnerabilidades para  **docker image** y  **kubernetes**
+# Práctica 8. Análisis de seguridad de Docker y Kubernetes usando Trivy, Checkov y Kubescape
+En este laboratorio se espera que el alumno pueda instalar y usar herramientas de análisis de vulnerabilidades para  **Docker Image** y  **Kubernetes**
 
 ## Objetivos
-- Análisis de vulnerabilidades de la imágen de **docker** (**Trivy**)
+- Análisis de vulnerabilidades de la imágen de **Docker** (**Trivy**).
+- Despliegue de microservicio en **Kubernetes**.
+- Análisis de vulnerabilidades de los **YAML** de Kubernetes (**Trivy**).
+- Análisis de vulnerabilidades del clúster de Kubernetes (**kubescape**). 
 
-- Despliegue de microservicio en **kubernetes**
-
-- Análisis de vulnerabilidades de los **YAML** de kubernetes (**Trivy**) 
-
-- Análisis de vulnerabilidades del clúster de kubernetes (**kubescape**). 
-
+## Duración aproximada:
+- 80 minutos.
+  
 ---
 
 <div style="width: 400px;">
@@ -38,9 +38,8 @@ En este laboratorio se espera que el alumno pueda instalar y usar herramientas d
 ![diagrama](../images/8/diagrama.png)
 
 
-> **IMPORTANTE**: Antes de comenzar el laboratorio asegurate de tener un clúster de kubernetes
+> **IMPORTANTE**: Antes de comenzar el laboratorio asegurate de tener un clúster de Kubernetes
 configurado, te recomiendo usar **[Minikube](https://minikube.sigs.k8s.io/docs/start/?arch=%2Fwindows%2Fx86-64%2Fstable%2F.exe+download)** ó puedes usar un clúster en la nube.
-
 
 
 ## Instrucciones
@@ -56,26 +55,25 @@ Este laboratorio esta dividido en las siguientes secciones:
 
 ## Análisis de vulnerabilidades de una imagen de Docker [return](#instrucciones)
 
-> **IMPORTANTE:** Este laboratorio necesita que tengas cargada tu imágen de docker de tu microservicio cliente en **docker hub** en el caso de no tenerlo regresar al laboratorio **Añadir seguridad en CICD para el Microservicio Cliente**
+> **IMPORTANTE:** Este laboratorio necesita que tengas cargada la imágen de Docker de tu microservicio cliente en **Docker Hub** en el caso de no tenerlo es necesario regresar al laboratorio **Añadir seguridad en CI/CD para el Microservicio Cliente**.
 
 > **IMPORTANTE:** Para este laboratorio es necesario tener instalado el gestor de paquetes **Chocolatey** en el caso de no tenerlo ver las opciones de instalación **[aquí](https://chocolatey.org/install)**
 
-1. Abrir una terminal de windows en modo **admninistrador**
-
-2. Ejecutar el siguiente comando para instalar a **trivy**
+1. Abrir una terminal de windows en modo **admninistrador.**
+2. Ejecutar el siguiente comando para instalar a **trivy.**
 
 ```bash
 choco install trivy
 ```
 ![alt text](../images/8/1.png)
 
-3. Ahora usaremos el siguiente comando para descargar nuestra imagen localmente: 
+3. Usar el siguiente comando para descargar nuestra imagen localmente: 
 
 ```bash
 docker pull turepositorio/devsecops:microserviceclient
 ```
 
-4. Validamos que nuestra imágen se encuentre localmente: 
+4. Validar que nuestra imágen se encuentre localmente: 
 
 ```bash
 docker image ls
@@ -83,7 +81,7 @@ docker image ls
 
 ![alt text](../images/8/2.png)
 
-5. Ahora realizaremos un análisis de seguridad de nuestra imagén donde sólo se muestran las vulnerabilidades altas y criticas:
+5. Realizar un análisis de seguridad de nuestra imagén donde sólo se muestran las vulnerabilidades altas y criticas:
 
 ```
 trivy image --severity HIGH,CRITICAL repositorio/devsecops:microserviceclient
@@ -92,18 +90,16 @@ trivy image --severity HIGH,CRITICAL repositorio/devsecops:microserviceclient
 ![alt text](../images/8/3.png)
 
 
-6. Análizamos todas las vulnerabilidades y cómo podemos notar existen muchas vulnerabilidades de la imágen base de **openjdk** para solucionarlo se recomienda lo siguiente:
+6. Analizar todas las vulnerabilidades. Como podemos notar, existen muchas vulnerabilidades de la imágen base de **openjdk**, para solucionarlo se recomienda lo siguiente:
 
-- Crear nuestra propia imagen personalizada de java **muchas empresas hacen esto**
-
-- Sólo exponer los puertos necesarios de esta forma se minimiza las posibles entradas a nuestro contenedor. 
-
+- Crear nuestra propia imagen personalizada de Java **muchas empresas hacen esto**.
+- Sólo exponer los puertos necesarios, de esta forma se minimizan las posibles entradas a nuestro contenedor. 
 
 ## Despliegue de microservicio cliente en Kubernetes [return](#instrucciones)
 > **IMPORTANTE:** Para esta sección es necesario que se tenga instalado **minikube y kubectl**  en el caso de no tenerlos instalarlos **[minikube installation](https://minikube.sigs.k8s.io/docs/start/)** y **[kubectl installation](https://kubernetes.io/docs/tasks/tools/)**
 
-1. Abrir una terminal de windows 
-2. Ejecutar el siguiente comando para iniciar un clúster de kubernetes de pruebas:
+1. Abrir una terminal de Windows. 
+2. Ejecutar el siguiente comando para iniciar un clúster de Kubernetes de pruebas:
 
 ```bash
 minikube start --driver=docker
@@ -112,16 +108,15 @@ minikube start --driver=docker
 
 ![alt text](../images/8/4.png)
 
-3. Crearemos una carpeta en el escritorio que llamaremos 
-**kubernetes** 
+3. Crear una carpeta en el escritorio con el nombre de **kubernetes.** 
 
-4. Abrimos la carpeta en **VSCode**
+4. Abrir la carpeta en **VSCode.**
 
-5. Añadiremos los siguientes archivos a la carpeta: 
+5. Añadir los siguientes archivos a la carpeta: 
 
 ![alt text](../images/8/5.png)
 
-6. En el archivo **db-secrets.yaml** añadiremos el siguiente contenido: 
+6. En el archivo **db-secrets.yaml**, añadir el siguiente contenido: 
 
 ```yaml
 apiVersion: v1
@@ -134,13 +129,13 @@ data:
   DB_PASSWORD: bmV0ZWMxMjM0
 ```
 
-> **IMPORTANTE:** El valor de DB_NAME y DB_PASSWORD estan codificados en **base64**, en el caso que requieras codificar tu valor usa el siguiente comando: 
+> **IMPORTANTE:** El valor de **DB_NAME** y **DB_PASSWORD** estan codificados en **base64**, en caso de que requieras codificar tu valor, usa el siguiente comando: 
 
 ```powershell
 [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("dato"))
 ```
 
-7. En el archivo **microservice-secrets.yaml** añadiremos el siguiente contenido: 
+7. En el archivo **microservice-secrets.yaml** añadir el siguiente contenido: 
 
 ```yaml
 apiVersion: v1
@@ -154,7 +149,7 @@ data:
   TENANT_ID: <tenantid base64>
 ```
 
-> **IMPORTANTE:** **CLIENT_ID, APP_SECRET Y TENANT_ID** són los valores de tu **app registration** creada anteriormente y también deben estar códificadas en **base64**
+> **IMPORTANTE:** **CLIENT_ID, APP_SECRET Y TENANT_ID** són los valores de tu **app registration** creada anteriormente y también deben estar códificadas en **base64**.
 
 8. En el archivo **microclient.yaml** añadir el siguiente contenido: 
 
@@ -265,9 +260,9 @@ spec:
           
 ```
 
-> **IMPORTANTE:** En la sección del despliegue del **Microservicio cliente** módifica la imagen de docker por la tuya. 
+> **IMPORTANTE:** En la sección del despliegue del **microservicio cliente**, modificar la imagen de Docker por la tuya. 
 
-9. Abre una terminal en la carpeta de **kubernetes** y ejecuta el siguiente comando: 
+9. Abrir una terminal en la carpeta de **Kubernetes** y ejecutar el siguiente comando: 
 
 ```bash
 kubectl apply -f .
@@ -275,7 +270,7 @@ kubectl apply -f .
 
 ![alt text](../images/8/6.png)
 
-10. Para validar que todo funciona bien ejecuta el siguiente comando: 
+10. Para validar que todo funciona bien, ejecutar el siguiente comando: 
 
 ```bash
 kubectl get deployments
@@ -295,17 +290,17 @@ minikube service micro-service
 
 ![alt text](../images/8/8.png)
 
-12. Abrir postman/insomnia y sustituir **localhost:8082** por el uri copiado y probar las operaciones del microservicio
+12. Abrir postman/insomnia y sustituir **localhost:8082** por el uri copiado y probar las operaciones del microservicio.
 
 ![alt text](../images/8/9.png)
 
 
 ## Análisis de seguridad de los YAML de despliegue usando Trivy y Checkov [return](#instrucciones)
 
-> **IMPORTANTE:** Para esta sección se necesita que se tengan instalado **Trivy** y **Checkov** 
+> **IMPORTANTE:** Para esta sección se necesita que se tengan instalado **Trivy** y **Checkov**. 
 
-1. Abrir una nueva terminal de windows
-2. En la terminal dirigirnos a la carpeta **kubernetes** donde se encuentran los **YAMLS** de nuestro microservicio. 
+1. Abrir una nueva terminal de Windows.
+2. En la terminal dirigirnos a la carpeta **Kubernetes** donde se encuentran los **YAMLS** de nuestro microservicio. 
 
 3. En la terminal ejecutaremos el siguiente comando para el análisis de **trivy**:
 
@@ -317,7 +312,7 @@ trivy config --severity HIGH,CRITICAL .
 
 4. Análizar las recomendaciones que nos da y los urls de documentación. 
 
-5. Ahora en la terminal realizaremos el análisis de checkov usando el siguiente comando estando en la carpeta de **kubernetes**: 
+5. En la terminal, realizar el análisis de Checkov usando el siguiente comando estando en la carpeta de **Kubernetes**: 
 
 
 ```bash
@@ -326,12 +321,12 @@ checkov -d .
 
 ![alt text](../images/8/11.png)
 
-6. Análizar las recomendaciones de seguridad y validar si nos da las mismas con ambas herramientas. 
+6. Analizar las recomendaciones de seguridad y validar si nos da las mismas con ambas herramientas. 
 
 
 ## Análisis de configuración de clúster de kubernetes [return](#instrucciones)
 
-1. Instalar la herramienta kubescape para el análisis del clúster de kubernetes. 
+1. Instalar la herramienta Kubescape para el análisis del clúster de Kubernetes. 
 
 ```bash
 choco install kubescape
@@ -339,21 +334,21 @@ choco install kubescape
 
 ![alt text](../images/8/12.png)
 
-2. Ejecutar el siguiente comando para el análisis de seguridad del clúster de kubernetes. 
+2. Ejecutar el siguiente comando para el análisis de seguridad del clúster de Kubernetes. 
 
 ```bash
 kubescape scan framework nsa --exclude-namespaces kube-system,kube-public
 ```
 
-> **NOTA:** El comando anterior nos dice que se analizará el clúster de kubernetes omitiendo los namespaces **kube-system y kube-public**
+> **NOTA:** El comando anterior nos dice que se analizará el clúster de kubernetes omitiendo los namespaces **kube-system y kube-public.**
 
 ![alt text](../images/8/13.png)
 
-3. Análizar las recomendaciones para el clúster de kubernetes. 
+3. Análizar las recomendaciones para el clúster de Kubernetes. 
 
-> **NOTA:** Al se un clúster de pruebas no es necesario realizar una modificación de los archivo de configuración, pero tomarlas en cuenta en sistemas de producción. 
+> **NOTA:** Al ser un clúster de pruebas no es necesario realizar una modificación de los archivo de configuración, pero es importante tomarlas en cuenta en los sistemas de producción. 
 
-## Resultado Esperado [instrucciones](#instrucciones)
+## Resultado esperado [instrucciones](#instrucciones)
 
 Al llegar hasta aquí el alumno tendrá 3 informes de seguridad de cada una de las herramientas. 
 
