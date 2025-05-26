@@ -7,8 +7,8 @@ En este laboratorio se espera que desarrolles una API REST utilizando Spring Boo
 Al finalizar la práctica, serás capaz de:
 - Desarrollar un API RESTful aplicando las buenas prácticas en el diseño de código con Spring Boot. 
 - Analizar nuestro código usando:
-	- snyk para buscar vulnerabilidades, y
- 	- SonarQube para la busqueda de vulnerabilidades en nuestro código.
+	- Snyk para buscar vulnerabilidades.
+ 	- SonarQube para la búsqueda de vulnerabilidades en nuestro código.
 
 ## Duración aproximada:
 - 60 minutos.
@@ -42,7 +42,7 @@ navegación-->
 ![diagrama](../images/2/diagrama.png)
 
 ## Instrucciones
-> **IMPORTANTE:** Antes de iniciar el laboratorio es necesario tener una cuenta de **gmail** y una cuenta **github** para el registro de las herramientas. 
+> **IMPORTANTE:** Antes de iniciar el laboratorio es necesario tener una cuenta de **gmail** y una cuenta **GitHub** para el registro de las herramientas. 
 
 Este laboratorio esta separado en las siguientes secciones:
 
@@ -50,7 +50,7 @@ Este laboratorio esta separado en las siguientes secciones:
 - **[Análisis de seguridad de código con SNYK](#análisis-de-seguridad-de-código-snyk-return)**
 - **[Análisis de seguridad de código con SONARQUBE](#análisis-de-seguridad-de-código-con-sonarqube-return)**
 
-### Códifica Microservicio Client [return](#instrucciones)
+### Códifica microservicio client [return](#instrucciones)
 
 1. Abrir Visual Studio Code.
 2. Pulsar la combinación de teclas **ctrl+shift+p** para abrir la paleta de comandos.
@@ -412,7 +412,7 @@ spring.datasource.password=1234
 
 ![alt text](../images/2/5.png)
 
-> **IMPORTANTE:** Al sincronizar nuestro proyecto a **snyk** nos pedira iniciar sesión con nuestra cuenta creada en los puntos anteriores. 
+> **IMPORTANTE:** Al sincronizar nuestro proyecto a **Snyk** nos pedira iniciar sesión con nuestra cuenta creada en los puntos anteriores. 
 
 4. En la plataforma de **Snyk** activar el análisis de código. 
 
@@ -428,11 +428,11 @@ spring.datasource.password=1234
 
 ### Análisis de seguridad de código con SONARQUBE [return](#instrucciones)
 
-1. Abrir el siguiente enlace **https://sonarcloud.io/login** e iniciar sesión usando tu cuenta de **github**
+1. Abrir el siguiente enlace **https://sonarcloud.io/login** e iniciar sesión usando tu cuenta de **GitHub.**
 
 ![alt text](../images/2/8.png)
 
-2. Al iniciar tu cuenta de **Sonar Cloud** añadir un nuevo proyecto. 
+2. Al iniciar tu cuenta de **Sonar Cloud**, añadir un nuevo proyecto. 
 
 ![alt text](../images/2/9.png)
 
@@ -462,7 +462,7 @@ spring.datasource.password=1234
 
 ![alt text](../images/2/14.png)
 
-10. Enlazar el proyecto creado en **sonarcloud** con el proyecto que tenemos con **visual studio code.** 
+10. Enlazar el proyecto creado en **Sonar Cloud** con el proyecto que tenemos con **Visual Studio Code.** 
 
 ![alt text](../images/2/15.png)
 
