@@ -65,7 +65,7 @@ Este laboratorio esta separado en las siguientes secciones:
 
 3. Fin de la configuración del repositorio remoto. 
 
-## Configuración Microservicio cliente [return](#instrucciones)
+## Configuración microservicio cliente [return](#instrucciones)
 
 > **IMPORTANTE:** Para esta sección es fundamental tener instalado **git**, en el caso de no tenerlo, descargarlo de la siguiente ruta **[git download](https://git-scm.com/downloads)**
 
@@ -258,7 +258,7 @@ ENTRYPOINT [ "java","-jar","client.jar" ]
 
 8. Abrir una terminal en nuestro microservicio cliente en **VSCode**. 
 
-9. Ejecutar el comando copiado de nuestro repositorio de **GitHub**
+9. Ejecutar el comando copiado de nuestro repositorio de **GitHub**.
 
 ```bash
 git remote add origin <URI git repository>
@@ -368,7 +368,7 @@ jobs:
 
 ![alt text](../images/5/11.png)
 
-## Validar Github Action [return](#instrucciones)
+## Validar GitHub Action [return](#instrucciones)
 
 1. Ir a la sección de **Actions** en nuestro repositorio.
 
@@ -376,7 +376,7 @@ jobs:
 
 ![alt text](../images/5/12.png)
 
-3. Abrir nuestra cuenta de **Docker hub** y validar que se haya creado el repositorio con nuestra imagen lista para ser usada en un despliegue. 
+3. Abrir nuestra cuenta de **Docker Hub** y validar que se haya creado el repositorio con nuestra imagen lista para ser usada en un despliegue. 
 
 ![alt text](../images/5/13.png)
 
