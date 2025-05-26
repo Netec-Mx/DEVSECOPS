@@ -49,9 +49,9 @@ Este laboratorio esta separado en las siguientes secciones:
 
 ### Códifica Microservicio Client [return](#instrucciones)
 
-1. Abrir Visual Studio Code
-2. Pulsa la combinación de teclas **ctrl+shift+p** para abrir la paleta de comandos.
-3. Buscar la opción **Spring initializr: Create a Maven Project**
+1. Abrir Visual Studio Code.
+2. Pulsar la combinación de teclas **ctrl+shift+p** para abrir la paleta de comandos.
+3. Buscar la opción **Spring initializr: Create a Maven Project**.
     - **Spring Boot Version:** 3.4.5
     - **Specify project language:** java
     - **input group id:** com.netec
@@ -362,11 +362,11 @@ spring.datasource.url=jdbc:mysql://localhost:3306/datab
 spring.datasource.username=root
 spring.datasource.password=1234
 ```
-11. Iniciar el microservicio usando el menú de Spring boot de visual studio code.
+11. Iniciar el microservicio usando el menú de Spring boot de Visual Studio Code.
 
 ![alt text](../images/2/2.png)
 
-12. Probar las siguientes operaciones en **POSTMAN o INSOMNIA** 
+12. Probar las siguientes operaciones en **POSTMAN o INSOMNIA**: 
     - **GET ALL**:
         ```bash
         curl --request GET --url http://localhost:8082/client
@@ -397,15 +397,15 @@ spring.datasource.password=1234
 
 ### Análisis de seguridad de código SNYK [return](#instrucciones)
 
-1. Abrir el siguiente enlace **https://app.snyk.io/login**, y iniciar sesión usando su cuenta de **google**
+1. Abrir el siguiente enlace **https://app.snyk.io/login**, e iniciar sesión usando su cuenta de **google.**
 
 ![alt text](../images/2/3.png)
 
-2. Ahora instalar en **Visual Studio Code** la extensión  **Snyk Security**
+2. Ahora instalar en **Visual Studio Code** la extensión  **Snyk Security.**
 
 ![alt text](../images/2/4.png)
 
-3. En las opciones de **SNYK** usar la opción **Enable Synk Code and start analyzing**
+3. En las opciones de **SNYK** usar la opción **Enable Synk Code and start analyzing.**
 
 ![alt text](../images/2/5.png)
 
@@ -415,7 +415,7 @@ spring.datasource.password=1234
 
 ![alt text](../images/2/6.png)
 
-5. Ahora reescanear el proyecto completo y esperar el análisis de seguridad.
+5. Reescanear el proyecto completo y esperar el análisis de seguridad.
 
 ![alt text](../images/2/7.png)
 
@@ -425,7 +425,7 @@ spring.datasource.password=1234
 
 ### Análisis de seguridad de código con SONARQUBE [return](#instrucciones)
 
-1. Abrir el siguiente enlace **https://sonarcloud.io/login** iniciar sesión usando tu cuenta de **github**
+1. Abrir el siguiente enlace **https://sonarcloud.io/login** e iniciar sesión usando tu cuenta de **github**
 
 ![alt text](../images/2/8.png)
 
@@ -434,51 +434,49 @@ spring.datasource.password=1234
 ![alt text](../images/2/9.png)
 
 
-3. Seleccionar la opción **create a project manually**
+3. Seleccionar la opción **create a project manually.**
 
 ![alt text](../images/2/10.png)
 
 
-4. Crear una nueva organización con el nombre **netec**
+4. Crear una nueva organización con el nombre **netec.**
 
 5. Añadir un proyecto **Analyze projects** con las siguientes opciones:
 
 ![alt text](../images/2/11.png)
 
-6. Set up project con las siguientes opciones
+6. Set up project con las siguientes opciones:
 
 ![alt text](../images/2/12.png)
 
-7. Ahora en **Visual Studio Code** instalar la extensión **SonarQube for IDE**:
+7. Ahora en **Visual Studio Code**, instalar la extensión **SonarQube for IDE**:
 
 ![alt text](../images/2/13.png)
 
-8. En las opciones de la extensión configurar **Add SonarQube Cloud Connection**
+8. En las opciones de la extensión configurar **Add SonarQube Cloud Connection.**
 
-9. Pulsar **Generate token**, en esta opción nos pedira iniciar sesión con nuestra cuenta de **SonarQube** y nos pedira seleccionar la **Organización**
+9. Pulsar **Generate token**, en esta opción nos pedira iniciar sesión con nuestra cuenta de **SonarQube** y  seleccionar la **Organización.**
 
 ![alt text](../images/2/14.png)
 
-10. Ahora debemos enlazar el proyecto creado en **sonarcloud** con el proyecto que tenemos con **visual studio code** 
+10. Enlazar el proyecto creado en **sonarcloud** con el proyecto que tenemos con **visual studio code.** 
 
 ![alt text](../images/2/15.png)
 
-11. Esperaremos que termine de analizar todos los archivos de **Microservice Client** 
+11. Esperar a que termine de analizar todos los archivos de **Microservice Client.** 
 
 12. En **Security HOSTSPOSTS** observaremos el reporte de posibles problemas de seguridad:
 
 ![alt text](../images/2/16.png)
 
-13. Si visitas cada archivo de tu proyecto observaras que **Sonarqube** te realiza recomendaciones de código limpio y te permite mejorarlo. 
+13. Si visitas cada archivo de tu proyecto observaras que **Sonarqube** realiza recomendaciones de código limpio y te permite mejorarlo. 
 
 ![alt text](../images/2/17.png)
 
-14. Analiza los resultados
-
-
+14. Analizar los resultados.
 
 ## Resultado esperado
-Al final de la práctica el alumno podra observar los resultados de los análisis de 2 herramientas orientadas a la seguridad de código y mejora continua del mismo. 
+Al final de la práctica el alumno podrá observar los resultados de los análisis de 2 herramientas orientadas a la seguridad de código y mejora continua del mismo. 
 
 ![alt text](../images/2/18.png)
 
