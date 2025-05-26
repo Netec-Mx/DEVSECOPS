@@ -15,7 +15,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 
     - ⏱️ **Duración estimada**: 60 min
 
-03. ### [Analizar dependencias y librerias del Microservicio cliente usando Synk y OWASP Dependency Check ](./Capitulo4/README.md)
+03. ### [Analizar dependencias y librerias del microservicio cliente usando Synk y OWASP Dependency Check ](./Capitulo4/README.md)
     - **Descripción**: En este laboratorio se espera que el alumno pueda comprobar la salud de sus dependencias usadas en su proyecto usando snyk y OWASP dependency check. 
 
     - ⏱️**Duración estimada**: 40 min
@@ -33,7 +33,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
     - **Descripción**: Probar un script de hardening básico para Ubuntu
     - ⏱️**Duración estimada**: 30 min
 
-07. ### [Configuración y uso de checkov para el escaneo de una plantilla de Terraform](./Capitulo8/README.md)
+07. ### [Configuración y uso de Checkov para el escaneo de una plantilla de Terraform](./Capitulo8/README.md)
     - **Descripción**: Realizar una configuración de checkov y probar el escaneo con una plantilla de terraform para buscar posibles vulnerabilidades. 
     - ⏱️**Duración estimada**: 40 min
 
