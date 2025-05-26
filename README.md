@@ -24,7 +24,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
     - **Descripción**: Implementar los secretos de azure para almacenar información sensible de nuestro Microservicio
     - ⏱️**Duración estimada**: 60 min
 
-05. ### [Añadir seguridad en CICD para el microservicio cliente](./Capitulo6/README.md)
+05. ### [Añadir seguridad en CI/CD para el microservicio cliente](./Capitulo6/README.md)
     - **Descripción**: automatizar las pruebas, análisis de seguridad, construcción y liberación del Microservicio Cliente. 
     - ⏱️**Duración estimada**: 60 min
 
