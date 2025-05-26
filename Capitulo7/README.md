@@ -1,10 +1,12 @@
-# 6. Hardening básico en Ubuntu:20.04
+# Práctica 6. Hardening básico en Ubuntu:20.04
 El alumno aprenderá cómo se asegura un servidor de Ubuntu usando un contenedor de Docker como servidor de prueba. 
 
-## Objetivos
-- Crear un contenedor docker con Ubuntu
-- Aprender los diferentes tipos de seguridad que se le puede dar a un servidor
+## Objetivos de la práctica:
+- Crear un contenedor docker con Ubuntu.
+- Aprender los diferentes tipos de seguridad que se le puede dar a un servidor.
 
+## Duración aproximada:
+- 30 minutos.
 
 ---
 
@@ -41,37 +43,36 @@ Este laboratorio se separa en las siguientes secciones:
 - **[Crear y ejecutar hardening script](#crear-y-ejecutar-hardening-script-return)**
 
 ## Crear un contenedor Ubuntu [return](#instrucciones)
-1. Abrir una terminal 
+1. Abrir una terminal. 
 2. En la terminal ejecutar el siguiente comando: 
 
 ```bash
  docker run -it --name ubuntu_server --entrypoint /bin/bash ubuntu:20.04
 ```
 
-> **NOTA:** Este comando creara un contenedor con la imagen de ubuntu:20.04 ejecutandose, al terminar de ejecutar el comando nos abrira una nueva terminal. 
+> **NOTA:** Este comando creara un contenedor con la imagen de Ubuntu:20.04 ejecutandose, al terminar de ejecutarse el comando nos abrira una nueva terminal. 
 
 ![alt text](../images/6/1.png)
 
 
-
 ## Crear y ejecutar hardening script [return](#instrucciones)
 
-1. Con la terminal del contenedor abierta, nos dirigimos a la ruta **home**
+1. Con la terminal del contenedor abierta, dirigirse a la ruta **home.**
 
 ```bash
 cd /home
 ```
 
-2. En la ruta home ejecutaremos los siguientes comandos:
+2. En la ruta home ejecutar los siguientes comandos:
 
 ```bash
 apt-get update
 apt-get install nano
 ```
 
-> **NOTA:** Por defecto en docker no se instala un editor de archivos así que instalaremos **nano** para la edición y creación del script. 
+> **NOTA:** Por defecto, en Docker no se instala un editor de archivos así que instalaremos **nano** para la edición y creación del script. 
 
-3. Crearemos una archivo llamado **hardening.sh** con el siguiente comando: 
+3. Crear una archivo llamado **hardening.sh** con el siguiente comando: 
 
 ```bash
 nano hardening.sh
@@ -79,18 +80,13 @@ nano hardening.sh
 
 ![alt text](../images/6/2.png)
 
-4. En el archivo añadiremos el siguiente código de bash, que añade algunas fases de seguridad: 
+4. Añadir en el archivo el siguiente código de bash, que incorpora algunas fases de seguridad: 
 
 - Actualiza el sistema.
-
 - Instala seguridad básica (fail2ban, auditd).
-
 - Configura actualizaciones automáticas.
-
 - Configura o omite firewall según sea contenedor o no.
-
 - Endurece SSH.
-
 - Desactiva IPv6.
 
 ```bash
@@ -169,11 +165,11 @@ echo "✅ Script ejecutado correctamente."
 chmod +x hardening.sh
 ```
 
-6. Validamos que tenga los permisos de ejecución. 
+6. Validar que tenga los permisos de ejecución. 
 
 ![alt text](../images/6/3.png)
 
-7. Ejecutamos el script con el comando. 
+7. Ejecutar el script con el comando. 
 
 ```bash
 . hardening.sh
@@ -183,15 +179,12 @@ chmod +x hardening.sh
 
 > **NOTA:** Algunas herramientas no se ejecutan correctamente porque nos encontramos en un contenedor y por eso no tenemos control completo del sistema operativo. 
 
-> **IMPORTANTE:** Este es un ejemplo sencillo de cómo podríamos proteger un servidor de ubuntu, aunque se le pueden añadir mas capas de seguridad en el caso de necesitarlo, pero la idea del hardening es minimizar el área de ataque de un servidor.
+> **IMPORTANTE:** Este es un ejemplo sencillo de cómo podríamos proteger un servidor de Ubuntu, aunque se le pueden añadir mas capas de seguridad en el caso de necesitarlo, pero la idea del hardening es minimizar el área de ataque de un servidor.
 
 
+## Resultado esperado [Instrucciones](#instrucciones)
 
-## Resultado Esperado [Instrucciones](#instrucciones)
-
-Se espera que el alumno haya podido ejecutar el hardening de un servidor de ubuntu:20.04
+Se espera que el alumno haya podido ejecutar el hardening de un servidor de Ubuntu:20.04
 
 
 ![alt text](../images/6/4.png)
-
-
