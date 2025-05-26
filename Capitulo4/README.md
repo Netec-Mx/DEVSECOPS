@@ -1,13 +1,10 @@
-# 3. Analizar dependencias y librerias del Microservicio Cliente usando snyk y OWASP Dependency Check.  
+# Práctica 3. Analizar dependencias y librerias del Microservicio Cliente usando snyk y OWASP Dependency Check.  
 
-En este labatorio se espera que los alumnos puedan revisar la salud de las dependencias de su Microservicio usando **SNYK y OWASP dependency check**
-
+En este labatorio se espera que los alumnos puedan revisar la salud de las dependencias de su Microservicio usando **SNYK y OWASP dependency check.**
 
 ## Objetivos
 - Usar **SNYK** para escanear el proyecto y buscar vulnerabilidades en sus dependencias. 
-
-- Usar **OWASP dependency check**
-para buscar vulnerabilidades en las dependencias del **pom.xml** 
+- Usar **OWASP dependency check** para buscar vulnerabilidades en las dependencias del **pom.xml** 
 
 ---
 
@@ -48,49 +45,49 @@ Esta práctica se separa en las siguientes secciones:
 ## Análisis de dependencias usando SNYK [return](#instrucciones)
 > **IMPORTANTE:** Se necesita tu cuenta de snyk del laboratorio **Análisis de seguridad y códificación de un API Rest Spring Boot** en el caso que no se tenga, es necesario regresar al laboratorio anterior y seguir las instrucciones de cómo obtenerla. 
 
-1. Abrir **Visual Studio Code**
-2. Abrir el proyecto del **MicroservicioCliente** 
-3. Validar que se tenga instalada la extensión **Snyk Security** 
+1. Abrir **Visual Studio Code.**
+2. Abrir el proyecto del **MicroservicioCliente.** 
+3. Validar que se tenga instalada la extensión **Snyk Security.** 
 
 ![alt text](../images/3/1.png)
 
-4. En la barra lateral de VSCode pulsa el icóno de **snyk**
+4. En la barra lateral de VSCode pulsa el icóno de **snyk.**
 
 ![alt text](../images/3/2.png)
 
-5. Realiza un nuevo escaneo, pero ahora tomaremos especial cuidado en la sección **Open Source Security**
+5. Realizar un nuevo escaneo,tomando especial cuidado en la sección **Open Source Security.**
 
 ![alt text](../images/3/3.png)
 
-6. Si observamos existe una dependencia con un problema de seguridad. Si le damos Click nos abrirá una nueva ventana con la ubicación de la dependencia con el problema y con la información del problema de seguridad. 
+6. Se advierte que existe una dependencia con un problema de seguridad. Al darle clic abrirá una nueva ventana con la ubicación de la dependencia con el problema y la información del problema de seguridad. 
 
 ![alt text](../images/3/4.png)
 
-7. La herramienta nos alerta que la dependencia de **MySQL Driver** tiene un problema 
+7. La herramienta nos alerta que la dependencia de **MySQL Driver** tiene un problema. 
 
-8. Abrimos la página de Oracle para observar con mayor detenimiento el problema y podemos observar que el problema es el siguiente:
+8. Abrir la página de Oracle para analizar con mayor detenimiento el problema. El problema es el siguiente:
 
 ![alt text](../images/3/5.png)
 
-> **NOTA:** Este problema de seguridad significa que un atacante se podría conectar a nuestro servidor de mysql sin la necesidad  de escribir la contraseña (esto sucedia en versiones antiguas de MySQL)
+> **NOTA:** Este problema de seguridad significa que un atacante se podría conectar a nuestro servidor de mysql sin la necesidad  de escribir la contraseña (esto sucedia en versiones antiguas de MySQL).
 
 9. Ahora... ¿Debería asustarme esta situación?. La respuesta corta es no, siempre y cuando se tomen precauciones cómo:
-- Ocultar la información de la base de datos de mi app
+- Ocultar la información de la base de datos de mi app.
 - Restringir el acceso en nuestra base de datos sólo a las ips necesarias. 
-- Usar **VPN o SSH tunnel** para conectarse a la base de datos
+- Usar **VPN o SSH tunnel** para conectarse a la base de datos.
 - Tener la base de datos en una conexión privada. 
 
-10. Por el momento nuestra aplicación no requiere de una modificación a nivel de dependencia. Pero si es importante tomar precauciones. 
+10. Por el momento, nuestra aplicación no requiere de una modificación a nivel de dependencia, pero si es importante tomar precauciones. 
 
 
 ## Análisis de dependencias usando OWASP dependency Check [return](#instrucciones)
 
 OWASP dependency check es una herramienta **opensource** que usa una base de datos de seguridad llamada **[National Vulnerability Database](https://nvd.nist.gov/developers/request-an-api-key)**, en nuestro proyecto no es necesario obtener el api key. 
 
-1. Abrir el proyecto del **Microservicio Cliente** 
-2. Abrir el archivo **pom.xml**
+1. Abrir el proyecto del **Microservicio Cliente.** 
+2. Abrir el archivo **pom.xml**.
 
-> **IMPORTANTE:** Este archivo es muy delicado, así que tener especial cuidado al modificarlo. 
+> **IMPORTANTE:** Este archivo es muy delicado, es importante tener especial cuidado al modificarlo. 
 
 3. Modificar el **pom.xml**
 
@@ -187,7 +184,7 @@ OWASP dependency check es una herramienta **opensource** que usa una base de dat
 </project>
 ```
 
-4. Abrir una nueva terminal de visual studio code y ejecutar el siguiente comando: 
+4. Abrir una nueva terminal de Visual Studio Code y ejecutar el siguiente comando: 
 
 ```bash
 .\mvnw org.owasp:dependency-check-maven:check
@@ -195,24 +192,21 @@ OWASP dependency check es una herramienta **opensource** que usa una base de dat
 
 ![alt text](../images/3/6.png)
 
-5. Abrir la ruta **target**  y buscar el archivo **html**, **dependency-check-report.html**
+5. Abrir la ruta **target**  y buscar el archivo **html**, **dependency-check-report.html**.
 
 
 ![alt text](../images/3/7.png)
 
 
-6. En esta herramienta no hay vulnerabilidades encontradas en **OWASP Dependency Check** 
+6. En esta herramienta no hay vulnerabilidades encontradas en **OWASP Dependency Check**. 
 
-> **NOTA:** Esto no es malo pero si hay que tenerlo en cuenta de usar más de una herramienta de análisis.
-
-
-
+> **NOTA:** Esto no es malo pero si hay que tenerlo en cuenta al usar más de una herramienta de análisis.
 
 
 
 ## Resultado esperado [Instrucciones](#instrucciones)
 
-Se espera que el alumno se tengan 2 informes uno de synk y otro de dependency check.
+Se espera que el alumno tengan 2 informes, uno de Synk y otro de Dependency Check.
 
 
 ![security](../images/3/8.png)
