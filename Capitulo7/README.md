@@ -159,7 +159,7 @@ echo "===== HARDENING BÁSICO FINALIZADO ====="
 echo "✅ Script ejecutado correctamente."
 ```
 
-5. Le damos permisos de ejecución
+5. Le damos permisos de ejecución.
 
 ```bash
 chmod +x hardening.sh
