@@ -15,16 +15,16 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 
     - ⏱️ **Duración estimada**: 60 min
 
-03. ### [Analizar dependencias y librerias del Microservicio Cliente usando snyk y OWASP Dependency Check. ](./Capitulo4/README.md)
+03. ### [Analizar dependencias y librerias del Microservicio cliente usando Synk y OWASP Dependency Check. ](./Capitulo4/README.md)
     - **Descripción**: En este laboratorio se espera que el alumno pueda comprobar la salud de sus dependencias usadas en su proyecto usando snyk y OWASP dependency check. 
 
     - ⏱️**Duración estimada**: 40 min
 
-04. ### [Gestión de Secretos con Azure Keyvault del Microservicio Cliente](./Capitulo5/README.md)
+04. ### [Gestión de Secretos con Azure Keyvault del microservicio cliente](./Capitulo5/README.md)
     - **Descripción**: Implementar los secretos de azure para almacenar información sensible de nuestro Microservicio
     - ⏱️**Duración estimada**: 60 min
 
-05. ### [Añadir seguridad en CICD para el Microservicio Cliente](./Capitulo6/README.md)
+05. ### [Añadir seguridad en CICD para el microservicio cliente](./Capitulo6/README.md)
     - **Descripción**: automatizar las pruebas, análisis de seguridad, construcción y liberación del Microservicio Cliente. 
     - ⏱️**Duración estimada**: 60 min
 
@@ -37,16 +37,16 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
     - **Descripción**: Realizar una configuración de checkov y probar el escaneo con una plantilla de terraform para buscar posibles vulnerabilidades. 
     - ⏱️**Duración estimada**: 40 min
 
-08. ### [Análisis de seguridad de Docker y Kubernetes usando Trivy, Checkov y kubescape](./Capitulo9/README.md)
+08. ### [Análisis de seguridad de Docker y Kubernetes usando Trivy, Checkov y Kubescape](./Capitulo9/README.md)
     - **Descripción**: Usando herramientas de seguridad se realizar análisis de vulnerabilidades en docker y kubernetes.
     - ⏱️**Duración estimada**: 80 min
 
 
-09. ### [Explorando Opciones de Seguridad en la nube con Azure Security Center](./Capitulo10/README.md)
+09. ### [Explorando opciones de seguridad en la nube con Azure Security Center](./Capitulo10/README.md)
     - **Descripción**: Tour por las opciones de seguridad de Azure Security Center. 
     - ⏱️**Duración estimada**: 30 min
 
-10. ### [Monitoreo de MicroservicioCliente con Grafana y Prometheus](./Capitulo11/README.md)
+10. ### [Monitoreo de microservicio cliente con Grafana y Prometheus](./Capitulo11/README.md)
     - **Descripción**: Usando Grafana y Prometheus crear un dashboard de monitoreo para el microservicio cliente. 
     - ⏱️**Duración estimada**: 60 min
 
