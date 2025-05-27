@@ -1,4 +1,4 @@
-# Práctica 7. Configuración y uso de Checkov para el escaneo de una plantilla de Terraform 
+# Práctica 7. Configuración y uso de Checkov para el escaneo de una plantilla de terraform 
 
 En este laboratorio exploraremos la integración continúa usando Github Actions y el almacenamiento de nuestra imagen Docker en Docker Hub.
 
