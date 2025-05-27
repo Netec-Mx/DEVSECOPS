@@ -3,7 +3,7 @@
 En este laboratorio exploraremos la integración continúa usando Github Actions y el almacenamiento de nuestra imagen Docker en Docker Hub.
 
 ## Objetivos de la práctica:
-- Installar Checkov.
+- Instalar Checkov.
 - Configurar una plantilla de terraform para nuestro microservicio cliente.
 - Buscar vulnerabilidades usando Checkov.
 
