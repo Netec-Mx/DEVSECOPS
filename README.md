@@ -1,4 +1,4 @@
-# ![Logo](./images/neteclogo_.png) 
+# ![Logo](./images/Logo_Netec 2.png)
 
 **Plataforma de Laboratorios**
 Bienvenido a la **Plataforma de Laboratorios** del curso **Desarrollo Seguro y Operaciones**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
