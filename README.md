@@ -1,7 +1,7 @@
 # ![Logo](./images/neteclogo_.png) 
 
 **Plataforma de Laboratorios**
-Bienvenido a la **Plataforma de Laboratorios** del curso **DevSecOps**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
+Bienvenido a la **Plataforma de Laboratorios** del curso **Desarrollo Seguro y Operaciones**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
 
 # Lista de Laboratorios
 Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia práctica. Haz clic en los enlaces para comenzar.
@@ -20,7 +20,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 
     - ⏱️**Duración estimada**: 40 min
 
-04. ### [Gestión de Secretos con Azure Keyvault del microservicio cliente](./Capitulo5/README.md)
+04. ### [Gestión de secretos con Azure Keyvault del microservicio cliente](./Capitulo5/README.md)
     - **Descripción**: Implementar los secretos de azure para almacenar información sensible de nuestro Microservicio
     - ⏱️**Duración estimada**: 60 min
 
