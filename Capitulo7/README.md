@@ -36,15 +36,15 @@ El alumno aprenderá cómo se asegura un servidor de Ubuntu usando un contenedor
 ![diagrama](../images/6/diagrama.png)
 
 ## Instrucciones
-Este laboratorio se separa en las siguientes secciones:
+Esta práctica se separa en las siguientes secciones:
 
 - **[Crear contenedor Ubuntu Server](#crear-un-contenedor-ubuntu-return)**
 
 - **[Crear y ejecutar hardening script](#crear-y-ejecutar-hardening-script-return)**
 
 ## Crear un contenedor Ubuntu [return](#instrucciones)
-1. Abrir una terminal. 
-2. En la terminal ejecutar el siguiente comando: 
+1. Abre una terminal. 
+2. Ejecuta el siguiente comando en la terminal: 
 
 ```bash
  docker run -it --name ubuntu_server --entrypoint /bin/bash ubuntu:20.04
@@ -57,13 +57,13 @@ Este laboratorio se separa en las siguientes secciones:
 
 ## Crear y ejecutar hardening script [return](#instrucciones)
 
-1. Con la terminal del contenedor abierta, dirigirse a la ruta **home.**
+1. Con la terminal del contenedor abierta, dirígete a la ruta **home.**
 
 ```bash
 cd /home
 ```
 
-2. En la ruta home ejecutar los siguientes comandos:
+2. En la ruta home ejecuta los siguientes comandos:
 
 ```bash
 apt-get update
@@ -72,7 +72,7 @@ apt-get install nano
 
 > **NOTA:** Por defecto, en Docker no se instala un editor de archivos así que instalaremos **nano** para la edición y creación del script. 
 
-3. Crear una archivo llamado **hardening.sh** con el siguiente comando: 
+3. Crea una archivo llamado **hardening.sh** con el siguiente comando: 
 
 ```bash
 nano hardening.sh
@@ -80,7 +80,7 @@ nano hardening.sh
 
 ![alt text](../images/6/2.png)
 
-4. Añadir en el archivo el siguiente código de bash, que incorpora algunas fases de seguridad: 
+4. Añade en el archivo el siguiente código de bash, que incorpora algunas fases de seguridad: 
 
 - Actualiza el sistema.
 - Instala seguridad básica (fail2ban, auditd).
@@ -165,11 +165,11 @@ echo "✅ Script ejecutado correctamente."
 chmod +x hardening.sh
 ```
 
-6. Validar que tenga los permisos de ejecución. 
+6. Valida que tenga los permisos de ejecución. 
 
 ![alt text](../images/6/3.png)
 
-7. Ejecutar el script con el comando. 
+7. Ejecuta el script con el comando. 
 
 ```bash
 . hardening.sh
