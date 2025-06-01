@@ -40,7 +40,7 @@ En este laboratorio exploraremos la integración continúa usando Github Actions
 
 
 ## Instrucciones
-Este laboratorio esta configurado en las siguientes secciones: 
+Esta práctica esta configurada en las siguientes secciones: 
 
 - **[Instalación Checkov](#instalación-checkov-return)**
 
@@ -49,11 +49,11 @@ Este laboratorio esta configurado en las siguientes secciones:
 - **[Análisis de vulnerabilidades de terraform](#análisis-de-vulnerabilidades-de-terraform-return)**
 
 
-## Instalación checkov [return](#instrucciones)
+## Instalación Checkov [return](#instrucciones)
 > **IMPORTANTE:** Para realizar esta sección es necesario tener instalado Python. En el caso de no tenerlo descargarlo de **[aquí](https://www.python.org/downloads/)**
 
-1. Abrir una terminal. 
-2. Ejecutar el siguiente comando: 
+1. Abre una terminal. 
+2. Ejecuta el siguiente comando: 
 
 ```bash
 pip install checkov
@@ -61,7 +61,7 @@ pip install checkov
 
 ![alt text](../images/7/1.png)
 
-3. Validar la instalación de Checkov usando el siguiente comando. 
+3. Valida la instalación de Checkov usando el siguiente comando. 
 
 ```bash
 pip list
@@ -72,10 +72,10 @@ pip list
 
 ## Crear plantilla terraform [return](#instrucciones)
 
-1. Abrir **Visual Studio Code.**
-2. Crear una carpeta que llamaremos **terraform.**
+1. Abre **Visual Studio Code.**
+2. Crea una carpeta que llamaremos **terraform.**
 3. En la carpeta crearemos un archivo que llamaremos **main.tf**.
-4. En el archivo **main.tf** añadiremos el siguiente contenido: 
+4. En el archivo **main.tf** añade el siguiente contenido: 
 
 ```json
 terraform {
@@ -163,7 +163,7 @@ Se indica que el contenedor tendrá una dirección IP pública accesible desde i
 ## Análisis de vulnerabilidades de terraform [return](#instrucciones)
 1. Para escanear las vulnerabilidades del archivo de terraform es necesario abrir una terminal en la ruta donde se encuentra el archivo. 
 
-2. Ejecutar el siguiente comando:
+2. Ejecuta el siguiente comando:
 
 ```bash
 checkov -d .
@@ -171,8 +171,8 @@ checkov -d .
 ![alt](../images/7/3.png)
 
 
-3. Analizar todas las recomendaciones de seguridad que te da Checkov.
-4. Para proteger las variables de ambiente y solucionar la mayor parte de errores, crear un archivo con el nombre de **variables.tf** al cual se le añadira el siguiente contenido:
+3. Analiza todas las recomendaciones de seguridad que te da Checkov.
+4. Para proteger las variables de ambiente y solucionar la mayor parte de errores, crea un archivo con el nombre de **variables.tf** al cual se le añadira el siguiente contenido:
 
 ```json
 variable "client_id"{
@@ -206,7 +206,7 @@ variable "tenant_id" {
 }
 ```
 
-5. Añadir otro archivo que llamaremos **terraform.tfvars** donde se agregará el siguiente contenido:
+5. Añade otro archivo, al cual llamaremos **terraform.tfvars**, donde se agregará el siguiente contenido:
 
 ```json
 client_id         = "<client_id>"
@@ -216,7 +216,7 @@ dockerhub_username = "pruebauser"
 dockerhub_password = "pruebapassword"
 ```
 
-6. Escanear nuevamente la plantilla de terraform con el siguiente comando:
+6. Escanea nuevamente la plantilla de terraform con el siguiente comando:
 
 ```bash
 checkov -d . 
