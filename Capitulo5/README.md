@@ -54,15 +54,15 @@ Esta práctica esta separada en las siguientes secciones:
 
 ![alt text](../images/4/1.png)
 
-4. En **Microsoft Entra ID** buscar **App Registrations** en la sección de **Manage.**
+4. En **Microsoft Entra ID** busca la **App Registrations** en la sección de **Manage.**
 
 ![alt text](../images/4/2.png)
 
-5. Crear un nuevo registro de aplicación en **+ New registration**. 
+5. Crea un nuevo registro de aplicación en **+ New registration**. 
 
 ![alt text](../images/4/3.png)
 
-6. Añadir los siguientes datos al registro de la aplicación. 
+6. Añade los siguientes datos al registro de la aplicación. 
 
 - **Name:** claseapp**tusiniciales**
 - **Supported account types:** Accounts in this organizational directory only
@@ -77,7 +77,7 @@ Esta práctica esta separada en las siguientes secciones:
 
 ![alt text](../images/4/5.png)
 
-8. Generar un secreto navegando en **Manage->Certificates & Secrets.**
+8. Genera un secreto navegando en **Manage->Certificates & Secrets.**
 
 ![alt text](../images/4/6.png)
 
@@ -89,25 +89,25 @@ Esta práctica esta separada en las siguientes secciones:
 
 ![alt text](../images/4/8.png)
 
-11. Almacenar el secreto en el notepad donde tenemos el client id y tenant id. 
+11. Almacena el secreto en el notepad donde tenemos el client id y tenant id. 
 
 ![alt text](../images/4/9.png)
 
 ## Configuración Azure Key Vault[return](#instrucciones)
 
-1. Abrir el portal de Azure **https://portal.azure.com**.
+1. Abre el portal de Azure **https://portal.azure.com**.
 
-2. En la barra de búsqueda escribir **Resource Groups**.
+2. En la barra de búsqueda escribe **Resource Groups**.
 
 ![alt text](../images/4/10.png)
 
-3. Si no se cuenta con un grupo de recursos, crear uno.
+3. Si no se cuenta con un grupo de recursos, crea uno.
 
-4. En el grupo de recursos crear un nuevo recurso **+Create**.
+4. En el grupo de recursos crea un nuevo recurso **+Create**.
 
 ![alt text](../images/4/11.png)
 
-5. Buscar **Key Vault**.
+5. Busca **Key Vault**.
 
 ![alt text](../images/4/12.png)
 
@@ -127,7 +127,7 @@ Esta práctica esta separada en las siguientes secciones:
 
 ![alt text](../images/4/13.png)
 
-7. Abrir el **Azure Key Vault** creado y abrir la opción **Access control IAM** (añadir 2 roles).
+7. Abre tanto el **Azure Key Vault** creado, como la opción **Access control IAM** (añadir 2 roles).
 - **Rol 1: Key Vault Adminstrator**: Este rol se le agrega a nuestra cuenta de Azure, esto permite que podamos administrar la herramienta y agregar información.
 
 - **Rol 2: Key Vault Secrets User**: Este rol se le agrega a nuestra aplicación registrada en Azure y permite que nuestra app pueda obtener los secretos de **Azure Key Vault**. 
@@ -139,11 +139,11 @@ Esta práctica esta separada en las siguientes secciones:
 
 ![alt text](../images/4/15.png)
 
-9. Ahora, dirigirse a la sección de **Objects->Secrets**.
+9. Ahora, dirígete a la sección de **Objects->Secrets**.
 
 ![alt text](../images/4/16.png)
 
-10. Generar 2 secretos: 
+10. Genera 2 secretos: 
 - **db-user**: root
 - **db-password**: 1234 
 
@@ -151,7 +151,7 @@ Esta práctica esta separada en las siguientes secciones:
 
 ![alt text](../images/4/17.png)
 
-11. Validar que los 2 secretos se hayan creado. 
+11. Valida que los 2 secretos se hayan creado. 
 
 ![alt text](../images/4/18.png)
 
@@ -160,9 +160,9 @@ Esta práctica esta separada en las siguientes secciones:
 ![alt text](../images/4/19.png)
 
 
-## Configuración Microservicio Cliente [return](#instrucciones)
+## Configuración microservicio cliente [return](#instrucciones)
 
-1. Abrir en Visual Studio Code tu **Microservicio Client**.
+1. Abrir en Visual Studio Code tu **microservicio client**.
 
 2. Modificar tu archivo **pom.xml** con el siguiente contenido: 
 
@@ -291,7 +291,7 @@ spring.datasource.password=${db-password}
 
 ![alt text](../images/4/20.png)
 
-6. Iniciar la aplicación y validar que continue funcionando. No se alteró el funcionamiento de la aplicación, lo que modificamos es que ahora el usuario y contraseña de la base de datos se obtiene desde **Key Vault**.
+6. Inicia la aplicación y valida que continue funcionando. No se alteró el funcionamiento de la aplicación, lo que modificamos es que ahora el usuario y contraseña de la base de datos se obtiene desde **Key Vault**.
 
 ## Resultado esperado 
 Si hemos llegado hasta aqui el alumno debería de poder ejecutar las operaciones del microservicio sin ningún problema. 
