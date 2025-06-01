@@ -39,19 +39,19 @@ Para automatizar la construcción, pruebas y liberación del proyecto, es necesa
 
 
 ## Instrucciones
-Este laboratorio esta separado en las siguientes secciones: 
+Esta práctica esta separada en las siguientes secciones: 
 
 - **[Configuración repositorio en github](#configuración-repositorio-en-github-return)**
 
-- **[Configuración Microservicio Cliente](#configuración-microservicio-cliente-return)**
+- **[Configuración microservicio cliente](#configuración-microservicio-cliente-return)**
 
-- **[Crear github Action](#crear-github-action-return)**
+- **[Crear GitHub Action](#crear-github-action-return)**
 
-- **[Validar Github Action](#validar-github-action-return)**
+- **[Validar GitHub Action](#validar-github-action-return)**
 
 ## Configuración del repositorio en GitHub [return](#instrucciones).
 
-1. Crear un nuevo repositorio en GitHub con los siguientes datos:
+1. Crea un nuevo repositorio en GitHub con los siguientes datos:
    
 - **repository name:** repomicroservice
 - **Public:** checked
@@ -59,7 +59,7 @@ Este laboratorio esta separado en las siguientes secciones:
 
 ![alt text](../images/5/1.png)
 
-2.  Al crear el repositorio nos mostrará algunos comandos importantes. Copiar el comando que comience con **git remote add origin url_repositorio** y activar **HTTPS**.
+2.  Al crear el repositorio nos mostrará algunos comandos importantes. Copia el comando que comience con **git remote add origin url_repositorio** y activa **HTTPS**.
 
 ![alt text](../images/5/2.png)
 
@@ -69,9 +69,9 @@ Este laboratorio esta separado en las siguientes secciones:
 
 > **IMPORTANTE:** Para esta sección es fundamental tener instalado **git**, en el caso de no tenerlo, descargarlo de la siguiente ruta **[git download](https://git-scm.com/downloads)**
 
-1. Abrir nuestro Microservicio Cliente en **Visual Studio Code.**
+1. Abre el microservicio cliente en **Visual Studio Code.**
 
-2. Módificar el archivo **pom.xml** con el siguiente comando:
+2. Modifica el archivo **pom.xml** con el siguiente comando:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -193,7 +193,7 @@ Este laboratorio esta separado en las siguientes secciones:
 
 ```
 
-3. En la raíz de nuestro proyecto crear un archivo llamado **suppression.xml** y agregar el siguiente contenido:
+3. En la raíz de nuestro proyecto crea un archivo llamado **suppression.xml** y agrega el siguiente contenido:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -208,7 +208,7 @@ Este laboratorio esta separado en las siguientes secciones:
 </suppressions>
 ```
 
-3.1 Modificar el archivo **application.properties**.
+3.1 Modifica el archivo **application.properties**.
 
 ```properties
 spring.application.name=micro-client
@@ -230,7 +230,7 @@ spring.datasource.username=${db-user}
 spring.datasource.password=${db-password}
 ```
 
-3.2 Agregar un archivo llamado **Dockerfile** en la raíz del proyecto y añadir el siguiente contenido:
+3.2 Agrega un archivo llamado **Dockerfile** en la raíz del proyecto y añade el siguiente contenido:
 
 ```Dockerfile
 FROM openjdk:17
@@ -240,31 +240,31 @@ EXPOSE 8082
 ENTRYPOINT [ "java","-jar","client.jar" ]
 ```
 
-4. Buscar en la barra lateral de **VSCode** el icono de git. 
+4. Busca en la barra lateral de **VSCode** el icono de git. 
 
 ![git](../images/5/3.png)
 
-5. Pulsar el botón **Initialize repository.**
+5. Pulsa el botón **Initialize repository.**
 
 ![init](../images/5/4.png)
 
-6. Agregar todos los cambios al repositorio usando el símbolo de **+** en la opción de **changes**.
+6. Agrega todos los cambios al repositorio usando el símbolo de **+** en la opción de **changes**.
 
 ![alt text](../images/5/5.png)
 
-7. Añadir un mensaje al **commit** y pulsar el botón **commit**.
+7. Añade un mensaje al **commit** y pulsa el botón **commit**.
 
 ![alt text](../images/5/6.png)
 
-8. Abrir una terminal en nuestro microservicio cliente en **VSCode**. 
+8. Abre una terminal en el microservicio cliente en **VSCode**. 
 
-9. Ejecutar el comando copiado de nuestro repositorio de **GitHub**.
+9. Ejecuta el comando copiado del repositorio de **GitHub**.
 
 ```bash
 git remote add origin <URI git repository>
 ```
 
-10. Ejecutar el comando que nos permitira sincronizar nuestro microservicio cliente: 
+10. Ejecuta el comando que nos permitira sincronizar el microservicio cliente: 
 
 ```bash
 git push --set-upstream origin main
@@ -272,22 +272,22 @@ git push --set-upstream origin main
 
 > **IMPORTANTE:** Este comando nos pedirá iniciar sesión con nuestra cuenta de GitHub, debemos de iniciar y esperar a que nuestro proyecto se cargue. 
 
-11. Validar que el código de tu microservicio este cargado en **GitHub.** 
+11. Valida que el código de tu microservicio este cargado en **GitHub.** 
 
 ![alt text](../images/5/8.png)
 
 
 ## Crear GitHub Action [return](#instrucciones)
 
-1. En el repositorio de **GitHub** donde se encuentra tu **Microservicio cliente** buscar la sección **Actions.**
+1. En el repositorio de **GitHub** donde se encuentra tu **Microservicio cliente** busca la sección **Actions.**
 
 ![alt text](../images/5/9.png)
 
-2. Seleccionar la opción **set up a workflow yourself**.
+2. Selecciona la opción **set up a workflow yourself**.
 
 ![alt text](../images/5/10.png)
 
-3. Añadir el siguiente flujo YAML, para realizar el CI/CD.
+3. Añade el siguiente flujo YAML, para realizar el CI/CD.
 
 ```yaml
 name: DevSecOps Microservice Client
@@ -363,20 +363,20 @@ jobs:
 
 
 
-4. Realizar el **commit**. 
-5. Añadir los siguientes **Secretos** en el repositorio:
+4. Realiza el **commit**. 
+5. Añade los siguientes **secretos** en el repositorio:
 
 ![alt text](../images/5/11.png)
 
 ## Validar GitHub Action [return](#instrucciones)
 
-1. Ir a la sección de **Actions** en nuestro repositorio.
+1. Ve a la sección de **Actions** en el repositorio.
 
-2. Encontrar nuestro **action** ejecutado correctamente.
+2. Encuentra el **action** ejecutado correctamente.
 
 ![alt text](../images/5/12.png)
 
-3. Abrir nuestra cuenta de **Docker Hub** y validar que se haya creado el repositorio con nuestra imagen lista para ser usada en un despliegue. 
+3. Abre la cuenta de **Docker Hub** y valida que se haya creado el repositorio con nuestra imagen lista para ser usada en un despliegue. 
 
 ![alt text](../images/5/13.png)
 
