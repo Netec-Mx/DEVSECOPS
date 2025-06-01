@@ -1,4 +1,4 @@
-# Práctica 3. Analizar dependencias y librerias del Microservicio Cliente usando Snyk y OWASP Dependency Check  
+# Práctica 3. Analizar dependencias y librerias del microservicio cliente usando Snyk y OWASP Dependency Check  
 
 En este labatorio se espera que los alumnos puedan revisar la salud de las dependencias de su Microservicio usando **Snyk y OWASP dependency check.**
 
@@ -48,9 +48,9 @@ Esta práctica se separa en las siguientes secciones:
 ## Análisis de dependencias usando Snyk [return](#instrucciones)
 > **IMPORTANTE:** Se necesita tu cuenta de Snyk del laboratorio **Análisis de seguridad y códificación de un API Rest Spring Boot** en caso de que no se tenga, es necesario regresar al laboratorio anterior y seguir las instrucciones de cómo obtenerla. 
 
-1. Abrir **Visual Studio Code.**
-2. Abrir el proyecto del **MicroservicioCliente.** 
-3. Validar que se tenga instalada la extensión **Snyk Security.** 
+1. Abre **Visual Studio Code.**
+2. Abre el proyecto del **MicroservicioCliente.** 
+3. Valida que se tenga instalada la extensión **Snyk Security.** 
 
 ![alt text](../images/3/1.png)
 
@@ -58,7 +58,7 @@ Esta práctica se separa en las siguientes secciones:
 
 ![alt text](../images/3/2.png)
 
-5. Realizar un nuevo escaneo,tomando especial cuidado en la sección **Open Source Security.**
+5. Realiza un nuevo escaneo, tomando especial cuidado en la sección **Open Source Security.**
 
 ![alt text](../images/3/3.png)
 
@@ -68,11 +68,11 @@ Esta práctica se separa en las siguientes secciones:
 
 7. La herramienta nos alerta que la dependencia de **MySQL Driver** tiene un problema. 
 
-8. Abrir la página de Oracle para analizar con mayor detenimiento el problema. El problema es el siguiente:
+8. Abre la página de Oracle para analizar con mayor detenimiento el problema. El problema es el siguiente:
 
 ![alt text](../images/3/5.png)
 
-> **NOTA:** Este problema de seguridad significa que un atacante se podría conectar a nuestro servidor de mysql sin la necesidad  de escribir la contraseña (esto sucedia en versiones antiguas de MySQL).
+> **NOTA:** Este problema de seguridad significa que un atacante se podría conectar a nuestro servidor de MySQL sin la necesidad  de escribir la contraseña (esto sucedia en versiones antiguas de MySQL).
 
 9. Ahora... ¿Debería asustarme esta situación?. La respuesta corta es no, siempre y cuando se tomen precauciones cómo:
 - Ocultar la información de la base de datos de mi app.
@@ -82,16 +82,16 @@ Esta práctica se separa en las siguientes secciones:
 
 10. Por el momento, nuestra aplicación no requiere de una modificación a nivel de dependencia, pero si es importante tomar precauciones. 
 
-## Análisis de dependencias usando OWASP dependency Check [return](#instrucciones)
+## Análisis de dependencias usando OWASP Dependency Check [return](#instrucciones)
 
-OWASP dependency check es una herramienta **opensource** que usa una base de datos de seguridad llamada **[National Vulnerability Database](https://nvd.nist.gov/developers/request-an-api-key)**, en nuestro proyecto no es necesario obtener el api key. 
+OWASP Dependency Check es una herramienta **opensource** que usa una base de datos de seguridad llamada **[National Vulnerability Database](https://nvd.nist.gov/developers/request-an-api-key)**, en nuestro proyecto no es necesario obtener el api key. 
 
-1. Abrir el proyecto del **Microservicio Cliente.** 
-2. Abrir el archivo **pom.xml**.
+1. Abre el proyecto del **Microservicio Cliente.** 
+2. Abre el archivo **pom.xml**.
 
 > **IMPORTANTE:** Este archivo es muy delicado, es importante tener especial cuidado al modificarlo. 
 
-3. Modificar el **pom.xml**
+3. Modifica el **pom.xml**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -186,7 +186,7 @@ OWASP dependency check es una herramienta **opensource** que usa una base de dat
 </project>
 ```
 
-4. Abrir una nueva terminal de Visual Studio Code y ejecutar el siguiente comando: 
+4. Abre una nueva terminal de Visual Studio Code y ejecuta el siguiente comando: 
 
 ```bash
 .\mvnw org.owasp:dependency-check-maven:check
@@ -194,7 +194,7 @@ OWASP dependency check es una herramienta **opensource** que usa una base de dat
 
 ![alt text](../images/3/6.png)
 
-5. Abrir la ruta **target** y buscar el archivo **html**, **dependency-check-report.html**.
+5. Abre la ruta **target** y busca el archivo **html**, **dependency-check-report.html**.
 
 
 ![alt text](../images/3/7.png)
