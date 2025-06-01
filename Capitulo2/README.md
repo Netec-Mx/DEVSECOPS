@@ -50,11 +50,11 @@ Antes de comenzar, lee con atención la siguiente información de la aplicación
 
 Una vez comprendida la funcionalidad de la aplicación solicitada, el siguiente paso es iniciar el modelado para detectar posibles amenazas en el diagrama anterior. 
 
-1. Abrir **Microsoft Threat Modeling Tool**.
+1. Abre **Microsoft Threat Modeling Tool**.
 
 ![alt text](../images/1/1.png)
 
-2. Seleccionar **Create A Model**.
+2. Selecciona **Create A Model**.
 
 ![alt text](../images/1/2.png)
 
@@ -62,7 +62,7 @@ Una vez comprendida la funcionalidad de la aplicación solicitada, el siguiente 
 
 ![alt text](../images/1/3.png)
 
-4. Definir el diagrama con los siguientes elementos:
+4. Define el diagrama con los siguientes elementos:
 
 ![alt text](../images/1/4.png)
 
@@ -76,19 +76,19 @@ Una vez comprendida la funcionalidad de la aplicación solicitada, el siguiente 
 - **Request**
 - **Response**
 
-6. Guardar el modelo con el nombre **`microservices-model`**.
+6. Guarda el modelo con el nombre **`microservices-model`**.
 
-7. Generar el reporte: **Reports -> Create Full Report**.
+7. Genera el reporte: **Reports -> Create Full Report**.
 
 ![alt text](../images/1/5.png)
 
-8. Almacenar el reporte en el escritorio con el nombre **`reporte`**.
+8. Almacena el reporte en el escritorio con el nombre **`reporte`**.
 
-9. Analizar el reporte generado.
+9. Analiza el reporte generado.
 
 ![alt text](../images/1/6.png)
 
-10. Listar en qué casos del ciclo de vida del software se implementa cada vulnerabilidad. 
+10. Lista en qué casos del ciclo de vida del software se implementa cada vulnerabilidad. 
 
 - **Requirements (Requisitos)**
 
