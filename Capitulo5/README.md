@@ -38,7 +38,7 @@ Es necesario proteger los datos de la base de datos y no almacenarlos en el micr
 ![diagrama](../images/4/diagrama.png)
 
 ## Instrucciones
-Este lab esta separado en las siguientes secciones:
+Esta práctica esta separada en las siguientes secciones:
 
 - **[App Registration en Azure](#app-registration-en-azure-return)**
 - **[Configuración Azure Key Vault](#configuración-azure-key-vaultreturn)**
@@ -48,9 +48,9 @@ Este lab esta separado en las siguientes secciones:
 ## App Registration en Azure [return](#instrucciones)
 > **IMPORTANTE:** Para esta sección necesitaremos una cuenta de **Microsoft Azure** para la creación y configuración de los recursos, la cuenta debe de tener el rol de **Application Administrator** y los permisos para asignar nuevos roles a recursos de Azure. 
 
-1. Abrir el portal de azure **https://portal.azure.com/**.
-2. Iniciar sesión con tu cuenta de Azure.
-3. En la barra de busqueda del portal de Azure escribir **Microsoft Entra ID.**
+1. Abre el portal de Azure **https://portal.azure.com/**.
+2. Inicia sesión con tu cuenta de Azure.
+3. En la barra de búsqueda del portal de Azure escribir **Microsoft Entra ID.**
 
 ![alt text](../images/4/1.png)
 
