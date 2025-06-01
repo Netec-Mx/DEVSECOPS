@@ -1,6 +1,6 @@
 # Práctica 9. Explorando opciones de seguridad en la Nube con Azure Security Center
 
-En este laboratorio el alumno observará, las opciones de seguridad en Azure usando Defender for Cloud.
+En esta práctica el alumno observará, las opciones de seguridad en Azure usando Defender for Cloud.
 
 ## Objetivos de la práctica:
 - Entender las opciones de seguridad ofrecids por Azure. 
@@ -39,25 +39,25 @@ En este laboratorio el alumno observará, las opciones de seguridad en Azure usa
 
 
 ## Instrucciones
-> **IMPORTANTE:** Para realizar este laboratorio es importante tener una cuenta de Azure con el rol de **Security Reader.**
+> **IMPORTANTE:** Para realizar esta práctica es importante tener una cuenta de Azure con el rol de **Security Reader.**
 
-1. Abrir el siguiente enlace **https://portal.azure.com**
+1. Abre el siguiente enlace **https://portal.azure.com**
 
-2. Iniciar sesión con tu cuenta de Azure con los permisos necesarios. 
+2. Inicia sesión con tu cuenta de Azure con los permisos necesarios. 
 
-3. En la barra de búsqueda escribir **Security** (para entrar a las opciones de Seguridad de Azure).
+3. En la barra de búsqueda escribe **Security** (para entrar a las opciones de Seguridad de Azure).
 
 ![alt text](../images/9/1.png)
 
-4. Entrar a **Security Center**. 
+4. Entra a **Security Center**. 
 
 ![alt text](../images/9/2.png)
 
-5. Seleccionar el vínculo de **Microsoft Defender for Cloud**.
+5. Selecciona el vínculo de **Microsoft Defender for Cloud**.
 
 ![alt text](../images/9/3.png)
 
-6. En la herramienta encontraremos 3 opciones de herramientas: 
+6. En la herramienta encontraremos 3 opciones: 
 
 ![alt text](../images/9/4.png)
 
@@ -68,11 +68,11 @@ En este laboratorio el alumno observará, las opciones de seguridad en Azure usa
 
 - **Management:** Opciones para gestionar la configuración global de Defender for Cloud. 
 
-7. Abrir las recomendaciones de seguridad para nuestra suscripción **General->Recommendations**
+7. Abre las recomendaciones de seguridad para nuestra suscripción **General->Recommendations**
 
 ![alt text](../images/9/5.png)
 
-> **NOTA:** Observar las recomendaciones y analizar su posible solución. Recuerda que sólo tienes permisos de lectura. 
+> **NOTA:** Observa las recomendaciones y analizar su posible solución. Recuerda que sólo tienes permisos de lectura. 
 
 
 8. En la sección de **Cloud Security** se encuentran las siguientes opciones: 
