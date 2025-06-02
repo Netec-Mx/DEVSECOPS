@@ -39,7 +39,7 @@ En este laboratorio se espera que el alumno pueda implementar una arquitectura d
 
 ## Instrucciones
 
-Este laboratorio esta separado en las siguientes secciones: 
+Esta práctica se encuentra separada en las siguientes secciones: 
 
 - **[Configurar Grafana y Prometheus](#configurar-grafana-y-prometheus-return)**
 
@@ -47,13 +47,13 @@ Este laboratorio esta separado en las siguientes secciones:
 
 ## Configurar Grafana y Prometheus [return](#instrucciones)
 
-1. Crear una carpeta con el nombre de **grafana y prometheus** en el escritorio.
-2. Abrir la carpeta en **Visual Studio Code**.
-3. Añadir los siguientes archivos en la carpeta:
+1. Crea una carpeta con el nombre de **grafana y prometheus** en el escritorio.
+2. Abre la carpeta en **Visual Studio Code**.
+3. Añade los siguientes archivos en la carpeta:
 
 ![alt text](../images/10/1.png)
 
-4. En el archivo **dashboard.json** agregar el siguiente contenido: 
+4. En el archivo **dashboard.json** agrega el siguiente contenido: 
 
 ```json
 {
@@ -504,14 +504,14 @@ Este laboratorio esta separado en las siguientes secciones:
 }
 ```
 
-5. En el archivo **db.env** añadiremos el siguiente contenido: 
+5. En el archivo **db.env** agrega el siguiente contenido: 
 
 ```properties
 MYSQL_DATABASE=datadb
 MYSQL_ROOT_PASSWORD=1234
 ```
 
-6. En el archivo **docker-compose.yaml** añadir el siguiente contenido: 
+6. En el archivo **docker-compose.yaml** agrega el siguiente contenido: 
 
 ```yaml
 services:
@@ -580,7 +580,7 @@ networks:
 
 ```
 
-7. En el archivo **micro-client.env** añadir el siguiente contenido: 
+7. En el archivo **micro-client.env** agrega el siguiente contenido: 
 
 ```properties
 DB_IP=mysqlserver
@@ -592,7 +592,7 @@ TENANT_ID=<your tenant id>
 > **IMPORTANTE:** Sustituye los valores por la información del **app registry de Azure**.
 
 
-8. En el archivo **prometheus.yaml** añadir el siguiente contenido:
+8. En el archivo **prometheus.yaml** agrega el siguiente contenido:
 
 
 ```yaml
@@ -604,9 +604,9 @@ scrape_configs:
       - targets: ['microclient:8082']
 ```
 
-9. Ahora en **Visual Studio Code** abrir una terminal. 
+9. Abre una terminal en **Visual Studio Code.**
 
-10. Ejecutar el siguiente comando (asegurarse de ejecutar el comando estando en la misma ruta donde se encuentra el archivo **docker-compose.yaml**):
+10. Ejecuta el siguiente comando (asegurarse de ejecutar el comando estando en la misma ruta donde se encuentra el archivo **docker-compose.yaml**):
 
 ```bash
 docker-compose up -d
@@ -615,12 +615,12 @@ docker-compose up -d
 > **NOTA:** El comando anterior iniciará toda la infraestructura con nuestro microservicio cliente, Grafana y Prometheus (tarda un poco el comando). 
 
 
-11. Validar que el comando tenga una salida similar a la siguiente: 
+11. Valida que el comando tenga una salida similar a la siguiente: 
 
 
 ![alt text](../images/10/2.png)
 
-12. Validar que los contenedores esten iniciados con el comando:
+12. Valida que los contenedores esten iniciados con el comando:
 
 ```bash
 docker ps
@@ -633,7 +633,7 @@ docker ps
 
 ## Crear Dashboard en Grafana [return](#instrucciones)
 
-1. Abrir un explorador web y escribir la siguiente dirección **http://localhost:3000**
+1. Abre un explorador web y escribe la siguiente dirección **http://localhost:3000**
 
 ![alt text](../images/10/4.png)
 
@@ -642,17 +642,17 @@ docker ps
 - user: **admin**
 - password: **pass**
 
-3. Estando dentro de la herramienta, buscar la opción  de **Connections->Add new Connection** en el menú de Grafana.
+3. Estando dentro de la herramienta, busca la opción  de **Connections->Add new Connection** en el menú de Grafana.
 
 ![alt text](../images/10/5.png)
 
-4. Buscar **Prometheus**.
+4. Busca **Prometheus**.
 
 ![alt text](../images/10/6.png)
 
-5. Ahora, seleccionar **Add new data source**.
+5. Ahora, selecciona **Add new data source**.
 
-6. Creare el datasource con la siguiente información:
+6. Crea el datasource con la siguiente información:
 
 - Name: **prometheus**
 - Prometheus server URL: **http://prometheus:9090**
@@ -665,20 +665,20 @@ docker ps
 
 ![alt text](../images/10/8.png)
 
-8. Ahora nos vamos al menú de Grafana y seleccionaremos **Dashboards**.
+8. Ahora, en el menú de Grafana, selecciona **Dashboards**.
 
 ![alt text](../images/10/9.png)
 
-9. En **Dashboards** seleccionar **New->Import**.
+9. En **Dashboards** escoge **New->Import**.
 
 ![alt text](../images/10/10.png)
 
-10. Seleccionar **Upload dashboard JSON file** y elegir el archivo dashboard.json que tenemos en nuestra carpeta **prometheus y grafana**. 
+10. Selecciona **Upload dashboard JSON file** y elige el archivo dashboard.json que tenemos en nuestra carpeta **prometheus y grafana**. 
 
 
 ![alt text](../images/10/11.png)
 
-11. Seleccionar el datasource **prometheus**.
+11. Selecciona el datasource **prometheus**.
 
 12. Si hemos realizado correctamente las instrucciones deberíamos de observar el siguiente dashboard:
 
