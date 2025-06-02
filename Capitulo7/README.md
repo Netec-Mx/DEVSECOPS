@@ -36,7 +36,7 @@ El alumno aprenderá cómo se asegura un servidor de Ubuntu usando un contenedor
 ![diagrama](../images/6/diagrama.png)
 
 ## Instrucciones
-Esta práctica se separa en las siguientes secciones:
+Esta práctica se encuentra separada en las siguientes secciones:
 
 - **[Crear contenedor Ubuntu Server](#crear-un-contenedor-ubuntu-return)**
 
