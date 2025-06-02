@@ -44,7 +44,7 @@ navegación-->
 ## Instrucciones
 > **IMPORTANTE:** Antes de iniciar la práctica es necesario tener una cuenta de **gmail** y una cuenta **GitHub** para el registro de las herramientas. 
 
-Esta práctica se encuentra separada en las siguientes secciones:
+Esta práctica se divide en las siguientes secciones:
 
 - **[Códificar Microservicio Client](#códifica-microservicio-client-return)**
 - **[Análisis de seguridad de código con SNYK](#análisis-de-seguridad-de-código-snyk-return)**
