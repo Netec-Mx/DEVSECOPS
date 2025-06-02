@@ -39,7 +39,7 @@ En este laboratorio se espera que el alumno pueda implementar una arquitectura d
 
 ## Instrucciones
 
-Esta práctica se encuentra separada en las siguientes secciones: 
+Esta práctica se divide en las siguientes secciones:
 
 - **[Configurar Grafana y Prometheus](#configurar-grafana-y-prometheus-return)**
 
