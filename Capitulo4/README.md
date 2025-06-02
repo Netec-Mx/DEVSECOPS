@@ -38,7 +38,7 @@ En este labatorio se espera que los alumnos puedan revisar la salud de las depen
 
 
 ## Instrucciones
-Esta práctica se separa en las siguientes secciones:
+Esta práctica se divide en las siguientes secciones:
 
 - **[Análisis de dependencias usando Snyk](#análisis-de-dependencias-usando-snyk-return)**
 
