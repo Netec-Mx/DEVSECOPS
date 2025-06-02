@@ -43,7 +43,7 @@ configurado, te recomiendo usar **[Minikube](https://minikube.sigs.k8s.io/docs/s
 
 
 ## Instrucciones
-Esta práctica se encuentra dividida en las siguientes secciones:
+Esta práctica se divide en las siguientes secciones:
 
 - **[Análisis de vulnerabilidades de una imagen de Docker](#análisis-de-vulnerabilidades-de-una-imagen-de-docker-return)**
 
