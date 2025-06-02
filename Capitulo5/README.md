@@ -38,7 +38,7 @@ Es necesario proteger los datos de la base de datos y no almacenarlos en el micr
 ![diagrama](../images/4/diagrama.png)
 
 ## Instrucciones
-Esta práctica esta separada en las siguientes secciones:
+Esta práctica se encuentra separada en las siguientes secciones:
 
 - **[App Registration en Azure](#app-registration-en-azure-return)**
 - **[Configuración Azure Key Vault](#configuración-azure-key-vaultreturn)**
