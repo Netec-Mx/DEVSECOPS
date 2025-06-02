@@ -39,7 +39,7 @@ Para automatizar la construcción, pruebas y liberación del proyecto, es necesa
 
 
 ## Instrucciones
-Esta práctica se encuentra separada en las siguientes secciones: 
+Esta práctica se divide en las siguientes secciones:
 
 - **[Configuración repositorio en github](#configuración-repositorio-en-github-return)**
 
