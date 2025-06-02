@@ -40,7 +40,7 @@ En este laboratorio exploraremos la integración continúa usando Github Actions
 
 
 ## Instrucciones
-Esta práctica esta configurada en las siguientes secciones: 
+Esta práctica se divide en las siguientes secciones:
 
 - **[Instalación Checkov](#instalación-checkov-return)**
 
