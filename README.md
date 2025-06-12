@@ -10,14 +10,12 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
     - **Descripción**: Modele una aplicación orientada a microservicios en Microsoft Threat Modeling Tool.
     - ⏱️ **Duración estimada**: 45 min.
 
-02. ### [Análisis de seguridad y códificación de un API Rest Spring Boot](./Capitulo3/README.md)
+02. ### [Análisis de seguridad y codificación de un API Rest Spring Boot](./Capitulo3/README.md)
     - **Descripción**: En este laboratorio se espera que el alumno pueda implementar un api restful usando arquitectura limpia y analizar su código usando Synk y SonarQube. 
-
     - ⏱️ **Duración estimada**: 60 min.
 
-03. ### [Analizar dependencias y librerias del microservicio cliente usando Synk y OWASP Dependency Check ](./Capitulo4/README.md)
+03. ### [Analizar dependencias y librerías del microservicio cliente usando Synk y OWASP Dependency Check ](./Capitulo4/README.md)
     - **Descripción**: En este laboratorio se espera que el alumno pueda comprobar la salud de sus dependencias usadas en su proyecto usando Snyk y OWASP Dependency Check. 
-
     - ⏱️**Duración estimada**: 40 min.
 
 04. ### [Gestión de secretos con Azure Keyvault del microservicio cliente](./Capitulo5/README.md)
@@ -49,8 +47,6 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 10. ### [Monitoreo de microservicio cliente con Grafana y Prometheus](./Capitulo11/README.md)
     - **Descripción**: Usando Grafana y Prometheus crear un dashboard de monitoreo para el microservicio cliente. 
     - ⏱️**Duración estimada**: 60 min.
-
-
 
 ---
 ## 📬 **Contacto y Más Información**
