@@ -1,8 +1,9 @@
-# Práctica 3. Analizar dependencias y librerias del microservicio cliente usando Snyk y OWASP Dependency Check  
+# Práctica 3. Analizar dependencias y librerías del microservicio _cliente_ usando Snyk y OWASP Dependency Check  
 
 En este labatorio se espera que los alumnos puedan revisar la salud de las dependencias de su Microservicio usando **Snyk y OWASP dependency check.**
 
 ## Objetivos de la práctica:
+Al finalizar la práctica, serás capaz de:
 - Usar **Snyk** para escanear el proyecto y buscar vulnerabilidades en sus dependencias. 
 - Usar **OWASP dependency check** para buscar vulnerabilidades en las dependencias del **pom.xml**. 
 
@@ -32,12 +33,11 @@ En este labatorio se espera que los alumnos puedan revisar la salud de las depen
 ---
 
 
-## Diagrama
+## Objetivo visual:
 
 ![diagrama](../images/3/diagrama.png)
 
-
-## Instrucciones
+## Instrucciones:
 Esta práctica se divide en las siguientes secciones:
 
 - **[Análisis de dependencias usando Snyk](#análisis-de-dependencias-usando-snyk-return)**
@@ -204,14 +204,10 @@ OWASP Dependency Check es una herramienta **opensource** que usa una base de dat
 
 > **NOTA:** Esto no es malo pero si hay que tenerlo en cuenta al usar más de una herramienta de análisis.
 
-
-
 ## Resultado esperado [Instrucciones](#instrucciones)
 
 Se espera que el alumno tengan 2 informes, uno de Synk y otro de Dependency Check.
 
-
 ![security](../images/3/8.png)
-
 
 ![owasp](../images/3/7.png)
