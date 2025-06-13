@@ -1,9 +1,10 @@
 # Desarrollo Seguro y Operaciones 
 
 **Plataforma de Laboratorios**
+
 Bienvenido a la **Plataforma de Laboratorios** del curso **Desarrollo Seguro y Operaciones**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
 
-# Lista de Laboratorios
+## Lista de Laboratorios
 Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia práctica. Haz clic en los enlaces para comenzar.
 
 01. ### [Modelado de amenazas con Microsoft Threat Modeling Tool](./Capitulo2/README.md)
