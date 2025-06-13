@@ -19,13 +19,12 @@ navegación-->
 <div style="width: 400px;">
         <table width="50%">
             <tr>
-                </td>
                 <td style="text-align: center;">
-                   <a href="https://netec-mx.github.io/DEVSECOPS_JAV/">Lista Laboratorios</a>
+                   <a href="https://netec-mx.github.io/DEVSECOPS_JAV/">Lista de laboratorios</a>
                 </td>
 <td style="text-align: center;">
                     <a href="../Capitulo3/"><img src="../images/siguiente.png" width="40px"></a>
-                    <br>siguiente
+                    <br>Siguiente
                 </td>
             </tr>
         </table>
