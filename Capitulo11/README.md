@@ -16,14 +16,11 @@ En este laboratorio se espera que el alumno pueda implementar una arquitectura d
             <tr>
                 <td style="text-align: center;">
                     <a href="../Capitulo10/"><img src="../images/anterior.png" width="40px"></a>
-                    <br>anterior
+                    <br>Anterior
                 </td>
                 <td style="text-align: center;">
-                   <a href="../README.md">Lista Laboratorios</a>
+                   <a href="https://netec-mx.github.io/DEVSECOPS_JAV/">Lista de laboratorios</a>
                 </td>
-<td style="text-align: center;">
-                    <a href=""><img src="../images/siguiente.png" width="40px"></a>
-                    <br>siguiente
                 </td>
             </tr>
         </table>
