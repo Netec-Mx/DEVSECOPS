@@ -16,27 +16,24 @@ En esta práctica el alumno observará, las opciones de seguridad en Azure usand
             <tr>
                 <td style="text-align: center;">
                     <a href="../Capitulo9/"><img src="../images/anterior.png" width="40px"></a>
-                    <br>anterior
+                    <br>Anterior
                 </td>
                 <td style="text-align: center;">
-                   <a href="../README.md">Lista Laboratorios</a>
+                   <a href="https://netec-mx.github.io/DEVSECOPS_JAV/">Lista de laboratorios</a>
                 </td>
 <td style="text-align: center;">
                     <a href="../Capitulo11/"><img src="../images/siguiente.png" width="40px"></a>
-                    <br>siguiente
+                    <br>Siguiente
                 </td>
             </tr>
         </table>
 </div>
 
-
 ---
 
-
-## Diagrama
+## Objetivo visual:
 
 ![diagrama](../images/9/diagrama.png)
-
 
 ## Instrucciones
 > **IMPORTANTE:** Para realizar esta práctica es importante tener una cuenta de Azure con el rol de **Security Reader.**
