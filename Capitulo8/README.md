@@ -17,14 +17,14 @@ En este laboratorio exploraremos la integración continúa usando Github Actions
             <tr>
                 <td style="text-align: center;">
                     <a href="../Capitulo7/"><img src="../images/anterior.png" width="40px"></a>
-                    <br>anterior
+                    <br>Anterior
                 </td>
                 <td style="text-align: center;">
-                   <a href="../README.md">Lista Laboratorios</a>
+                   <a href="https://netec-mx.github.io/DEVSECOPS_JAV/">Lista de laboratorios</a>
                 </td>
 <td style="text-align: center;">
                     <a href="../Capitulo9/"><img src="../images/siguiente.png" width="40px"></a>
-                    <br>siguiente
+                    <br>Siguiente
                 </td>
             </tr>
         </table>
