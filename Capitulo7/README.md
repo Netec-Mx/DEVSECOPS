@@ -2,6 +2,7 @@
 El alumno aprenderá cómo se asegura un servidor de Ubuntu usando un contenedor de Docker como servidor de prueba. 
 
 ## Objetivos de la práctica:
+Al finalizar la práctica, serás capaz de:
 - Crear un contenedor docker con Ubuntu.
 - Aprender los diferentes tipos de seguridad que se le puede dar a un servidor.
 
@@ -15,14 +16,14 @@ El alumno aprenderá cómo se asegura un servidor de Ubuntu usando un contenedor
             <tr>
                 <td style="text-align: center;">
                     <a href="../Capitulo6/"><img src="../images/anterior.png" width="40px"></a>
-                    <br>anterior
+                    <br>Anterior
                 </td>
                 <td style="text-align: center;">
-                   <a href="../README.md">Lista Laboratorios</a>
+                   <a href="https://netec-mx.github.io/DEVSECOPS_JAV/">Lista de laboratorios</a>
                 </td>
 <td style="text-align: center;">
                     <a href="../Capitulo8/"><img src="../images/siguiente.png" width="40px"></a>
-                    <br>siguiente
+                    <br>Siguiente
                 </td>
             </tr>
         </table>
@@ -31,11 +32,12 @@ El alumno aprenderá cómo se asegura un servidor de Ubuntu usando un contenedor
 ---
 
 
-## Diagrama
+## Objetivo visual:
 
 ![diagrama](../images/6/diagrama.png)
 
-## Instrucciones
+## Instrucciones:
+
 Esta práctica se divide en las siguientes secciones:
 
 - **[Crear contenedor Ubuntu Server](#crear-un-contenedor-ubuntu-return)**
@@ -50,7 +52,7 @@ Esta práctica se divide en las siguientes secciones:
  docker run -it --name ubuntu_server --entrypoint /bin/bash ubuntu:20.04
 ```
 
-> **NOTA:** Este comando creara un contenedor con la imagen de Ubuntu:20.04 ejecutandose, al terminar de ejecutarse el comando nos abrira una nueva terminal. 
+> **NOTA:** Este comando creará un contenedor con la imagen de Ubuntu:20.04 ejecutándose. Una vez finalizado, se abrirá una nueva terminal. 
 
 ![alt text](../images/6/1.png)
 
@@ -63,7 +65,7 @@ Esta práctica se divide en las siguientes secciones:
 cd /home
 ```
 
-2. En la ruta home ejecuta los siguientes comandos:
+2. En la ruta home, ejecuta los siguientes comandos:
 
 ```bash
 apt-get update
@@ -182,9 +184,8 @@ chmod +x hardening.sh
 > **IMPORTANTE:** Este es un ejemplo sencillo de cómo podríamos proteger un servidor de Ubuntu, aunque se le pueden añadir mas capas de seguridad en el caso de necesitarlo, pero la idea del hardening es minimizar el área de ataque de un servidor.
 
 
-## Resultado esperado [Instrucciones](#instrucciones)
+## Resultado esperado: [Instrucciones](#instrucciones)
 
 Se espera que el alumno haya podido ejecutar el hardening de un servidor de Ubuntu:20.04
-
 
 ![alt text](../images/6/4.png)
