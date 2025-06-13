@@ -21,7 +21,6 @@ En este laboratorio se espera que el alumno pueda implementar una arquitectura d
                 <td style="text-align: center;">
                    <a href="https://netec-mx.github.io/DEVSECOPS_JAV/">Lista de laboratorios</a>
                 </td>
-                </td>
             </tr>
         </table>
 </div>
